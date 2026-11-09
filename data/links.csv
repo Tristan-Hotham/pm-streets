@@ -1,0 +1,837 @@
+constituency,election,town,town_name,how,km
+Aberavon,1918,Q2588227,Aberavon,name,1.3
+Aberdare,1918,Q319369,Aberdare,name,0.0
+Aberdeen,1868,Q36405,Aberdeen,name,0.0
+Aberdeen North,1885,Q36405,Aberdeen,name,3.6
+Aberdeen South,1885,Q36405,Aberdeen,name,6.4
+Abertillery,1918,Q2272537,Abertillery,name,0.0
+Accrington,1885,Q1622949,Accrington,name,0.0
+Acton,1918,Q84,London,Greater London,0.0
+Aldershot,1918,Q646980,Aldershot,name,2.9
+Altrincham,1885,Q445058,Altrincham,name,0.0
+Altrincham and Sale,1945,Q1022733,Sale,and,5.0
+Altrincham and Sale,1945,Q445058,Altrincham,and,0.0
+Andover,1868,Q492805,Andover,name,0.0
+Arundel and Shoreham,1950,Q716658,Arundel,and,0.0
+Ashburton,1885,Q724915,Ashburton,name,0.0
+Ashford,1885,Q725261,Ashford,name,7.0
+Ashton-under-Lyne,1868,Q659803,Ashton-under-Lyne,name,0.8
+Aston Manor,1885,Q2256,Birmingham,alias,2.4
+Aylesbury,1868,Q213474,Aylesbury,name,0.3
+Ayr,1950,Q654216,Ayr,name,0.0
+Ayr Burghs,1868,Q654216,Ayr,name,0.0
+Balham and Tooting,1918,Q84,London,Greater London,0.0
+Banbury,1868,Q806160,Banbury,name,11.6
+Barking,1945,Q84,London,Greater London,0.0
+Barnard Castle,1885,Q808437,Barnard Castle,name,0.0
+Barnet,1945,Q84,London,Greater London,0.0
+Barnsley,1885,Q54212,Barnsley,name,0.0
+Barnstaple,1868,Q808532,Barnstaple,name,0.0
+Barons Court,1955,Q84,London,Greater London,0.0
+Barrow in Furness,1885,Q671892,Barrow-in-Furness,alias,3.2
+Barry,1950,Q809009,Barry,name,0.0
+Basingstoke,1885,Q810196,Basingstoke,name,0.2
+Bath,1868,Q22889,Bath,name,0.1
+Batley and Morley,1918,Q810847,Batley,and,0.0
+Batley and Morley,1918,Q1021179,Morley,and,4.2
+Battersea,1885,Q84,London,Greater London,0.0
+Battersea North,1918,Q84,London,Greater London,0.0
+Battersea South,1918,Q84,London,Greater London,0.0
+Bebington,1950,Q813552,Bebington,name,0.0
+Beckenham,1950,Q84,London,Greater London,0.0
+Bedford,1868,Q208257,Bedford,name,0.7
+Belper,1918,Q2080375,Belper,name,0.0
+Bermondsey,1885,Q84,London,Greater London,0.0
+Bermondsey West,1918,Q84,London,Greater London,0.0
+Berwick and Haddington,1918,Q2281658,Haddington,and,0.0
+Berwick-upon-Tweed,1868,Q504678,Berwick-upon-Tweed,name,25.0
+Bethnal Green,1950,Q84,London,Greater London,0.0
+Beverley,1868,Q851718,Beverley,name,0.0
+Bewdley,1868,Q766594,Bewdley,name,0.0
+Bexley,1945,Q84,London,Greater London,0.0
+Biggleswade,1885,Q2224167,Biggleswade,name,0.0
+Billericay,1950,Q862832,Billericay,name,0.0
+Bilston,1918,Q1015967,Bilston,name,0.0
+Birkenhead,1868,Q746718,Birkenhead,name,2.6
+Birkenhead East,1918,Q746718,Birkenhead,name,2.6
+Birkenhead West,1918,Q746718,Birkenhead,name,2.6
+Birmingham,1868,Q2256,Birmingham,name,0.3
+Birmingham Acock's Green,1945,Q2256,Birmingham,prefix,0.3
+Birmingham All Saints,1955,Q2256,Birmingham,prefix,1.9
+Birmingham Aston,1918,Q2256,Birmingham,prefix,2.7
+Birmingham Bordesley,1885,Q2256,Birmingham,prefix,2.2
+Birmingham Central,1885,Q2256,Birmingham,name,0.3
+Birmingham Deritend,1918,Q2256,Birmingham,prefix,1.5
+Birmingham Duddeston,1918,Q2256,Birmingham,prefix,1.7
+Birmingham East,1885,Q2256,Birmingham,name,2.8
+Birmingham Edgbaston,1885,Q2256,Birmingham,prefix,3.3
+Birmingham Erdington,1918,Q2256,Birmingham,prefix,4.0
+Birmingham Hall Green,1950,Q2256,Birmingham,prefix,7.0
+Birmingham Handsworth,1918,Q2256,Birmingham,prefix,4.8
+Birmingham King's Norton,1918,Q2256,Birmingham,prefix,0.3
+Birmingham Ladywood,1918,Q2256,Birmingham,prefix,2.5
+Birmingham Moseley,1918,Q2256,Birmingham,prefix,3.8
+Birmingham North,1885,Q2256,Birmingham,name,2.6
+Birmingham Northfield,1950,Q2256,Birmingham,prefix,10.3
+Birmingham Perry Barr,1950,Q2256,Birmingham,prefix,5.0
+Birmingham Selly Oak,1955,Q2256,Birmingham,prefix,6.1
+Birmingham Small Heath,1950,Q2256,Birmingham,prefix,3.8
+Birmingham South,1885,Q2256,Birmingham,name,2.5
+Birmingham Sparkbrook,1918,Q2256,Birmingham,prefix,2.9
+Birmingham Stechford,1950,Q2256,Birmingham,prefix,6.5
+Birmingham West,1885,Q2256,Birmingham,name,2.2
+Birmingham Yardley,1918,Q2256,Birmingham,prefix,6.0
+Bishop Auckland,1885,Q866339,Bishop Auckland,name,0.4
+Blackburn,1868,Q188313,Blackburn,name,1.6
+Blackburn East,1950,Q188313,Blackburn,name,1.6
+Blackburn West,1950,Q188313,Blackburn,name,1.6
+Blackpool,1885,Q170377,Blackpool,name,2.2
+Blackpool North,1945,Q170377,Blackpool,name,10.3
+Blackpool South,1945,Q170377,Blackpool,name,10.5
+Blaydon,1918,Q933113,Blaydon,name,1.5
+Blyth,1950,Q886899,Blyth,name,0.6
+Bodmin,1868,Q889888,Bodmin,name,0.0
+Bolsover,1950,Q2130058,Bolsover,name,0.8
+Bolton,1868,Q184579,Bolton,name,0.0
+Bolton East,1950,Q184579,Bolton,name,2.5
+Bolton West,1950,Q184579,Bolton,name,1.4
+Bootle,1885,Q893159,Bootle,name,0.6
+Boston,1868,Q311975,Boston,name,0.0
+Bothwell,1918,Q1773759,Bothwell,name,0.0
+Bournemouth,1918,Q170478,Bournemouth,name,0.2
+Bournemouth East and Christchurch,1950,Q925424,Christchurch,and,1.7
+Bournemouth East and Christchurch,1950,Q170478,Bournemouth,and,5.5
+Bournemouth West,1950,Q170478,Bournemouth,name,2.4
+Bow and Bromley,1885,Q84,London,Greater London,0.0
+Brecon,1868,Q904472,Brecon,name,0.0
+Brecon and Radnor,1918,Q904472,Brecon,and,16.4
+Brentford,1885,Q84,London,Greater London,0.0
+Brentford and Chiswick,1918,Q84,London,Greater London,0.0
+Bridgnorth,1868,Q914000,Bridgnorth,name,0.0
+Bridgwater,1868,Q914015,Bridgwater,name,8.0
+Bridlington,1950,Q527391,Bridlington,name,0.8
+Bridport,1868,Q914040,Bridport,name,0.0
+Brierley Hill,1950,Q2734868,Brierley Hill,name,0.0
+Brigg,1885,Q2058702,Brigg,name,0.0
+Brighouse and Spenborough,1950,Q183296,Brighouse,and,0.0
+Brighton,1868,Q131491,Brighton,name,0.0
+Brighton Kemptown,1950,Q131491,Brighton,prefix,7.2
+Brighton Pavilion,1950,Q131491,Brighton,prefix,0.9
+Bristol,1868,Q23154,Bristol,name,0.0
+Bristol Central,1918,Q23154,Bristol,name,1.1
+Bristol East,1885,Q23154,Bristol,name,4.7
+Bristol North,1885,Q23154,Bristol,name,5.7
+Bristol North East,1950,Q23154,Bristol,name,5.3
+Bristol North West,1950,Q23154,Bristol,name,5.7
+Bristol South,1885,Q23154,Bristol,name,2.9
+Bristol South East,1950,Q23154,Bristol,name,3.5
+Bristol West,1885,Q23154,Bristol,name,1.3
+Brixton,1885,Q84,London,Greater London,0.0
+Bromley,1918,Q84,London,Greater London,0.0
+Bromsgrove,1950,Q1190876,Bromsgrove,name,7.7
+Buckingham,1868,Q195955,Buckingham,name,0.8
+Burnley,1868,Q209096,Burnley,name,0.3
+Burslem,1918,Q1857589,Burslem,name,0.0
+Burton,1885,Q1000597,Burton upon Trent,alias,15.1
+Bury,1868,Q47822,Bury,name,0.0
+Bury St Edmunds,1868,Q764754,Bury St Edmunds,name,12.8
+Bury and Radcliffe,1950,Q47822,Bury,and,0.0
+Bury and Radcliffe,1950,Q968937,Radcliffe,and,4.0
+Caerphilly,1918,Q909119,Caerphilly,name,0.1
+Calne,1868,Q1235307,Calne,name,0.0
+Camberwell North,1885,Q84,London,Greater London,0.0
+Camberwell North West,1918,Q84,London,Greater London,0.0
+Camborne,1885,Q1774403,Camborne,name,0.0
+Cambridge,1868,Q350,Cambridge,name,0.8
+Cannock,1918,Q992665,Cannock,name,0.0
+Canterbury,1868,Q29303,Canterbury,name,3.1
+Cardiff,1868,Q10690,Cardiff,name,0.0
+Cardiff Central,1918,Q10690,Cardiff,name,3.2
+Cardiff East,1918,Q10690,Cardiff,name,1.9
+Cardiff North,1950,Q10690,Cardiff,name,4.3
+Cardiff South,1918,Q10690,Cardiff,name,2.5
+Cardiff South East,1950,Q10690,Cardiff,name,3.6
+Cardiff West,1950,Q10690,Cardiff,name,2.5
+Cardigan Boroughs,1868,Q779813,Cardigan,name,0.0
+Carlisle,1868,Q192896,Carlisle,name,1.8
+Carlton,1950,Q2736123,Carlton,name,0.0
+Carmarthen,1885,Q835835,Carmarthen,name,13.4
+Carmarthen Boroughs,1868,Q835835,Carmarthen,name,13.4
+Carshalton,1945,Q84,London,Greater London,0.0
+Central Aberdeen and Kincardine,1918,Q36405,Aberdeen,and,0.0
+Central Finsbury,1885,Q84,London,Greater London,0.0
+Central Kingston upon Hull,1885,Q128147,Kingston upon Hull,name,0.0
+Central Newcastle upon Tyne,1918,Q1425428,Newcastle upon Tyne,name,2.8
+Central Stoke-on-Trent,1950,Q134902,Stoke-on-Trent,name,1.9
+Chatham,1868,Q729006,Chatham,name,1.8
+Cheadle,1950,Q1615894,Cheadle,name,0.6
+Chelmsford,1885,Q210985,Chelmsford,name,1.3
+Chelsea,1868,Q84,London,Greater London,0.0
+Cheltenham,1868,Q206988,Cheltenham,name,0.7
+Chertsey,1885,Q1070428,Chertsey,name,0.0
+Chester-le-Street,1885,Q2570025,Chester-le-Street,name,0.0
+Chesterfield,1885,Q823600,Chesterfield,name,2.4
+Chichester,1868,Q207639,Chichester,name,0.0
+Chigwell,1955,Q944734,Chigwell,name,0.0
+Chippenham,1868,Q775299,Chippenham,name,10.6
+Chislehurst,1918,Q84,London,Greater London,0.0
+Chorley,1885,Q2078535,Chorley,name,0.0
+Christchurch,1868,Q925424,Christchurch,name,9.1
+Cirencester,1868,Q852772,Cirencester,name,0.0
+Cirencester and Tewkesbury,1918,Q852772,Cirencester,and,0.0
+Cities of London and Westminster,1950,Q84,London,Greater London,0.0
+City of Chester,1868,Q170263,Chester,alias,4.3
+City of London,1868,Q84,London,Greater London,0.0
+Clapham,1885,Q84,London,Greater London,0.0
+Clay Cross,1918,Q2553931,Clay Cross,name,0.0
+Clitheroe,1868,Q1008765,Clitheroe,name,0.0
+Coatbridge,1918,Q1018723,Coatbridge,name,0.0
+Coatbridge and Airdrie,1950,Q408536,Airdrie,and,2.9
+Coatbridge and Airdrie,1950,Q1018723,Coatbridge,and,0.0
+Cockermouth,1868,Q241684,Cockermouth,name,0.0
+Colchester,1868,Q184163,Colchester,name,0.3
+Consett,1918,Q2080364,Consett,name,0.0
+Coventry,1868,Q6225,Coventry,name,0.0
+Coventry East,1945,Q6225,Coventry,name,4.0
+Coventry North,1950,Q6225,Coventry,name,2.5
+Coventry South,1950,Q6225,Coventry,name,3.0
+Coventry West,1945,Q6225,Coventry,name,2.5
+Crewe,1885,Q648810,Crewe,name,0.0
+Cricklade,1868,Q533456,Cricklade,name,0.0
+Crosby,1950,Q1141046,Crosby,name,0.5
+Croydon,1885,Q84,London,Greater London,0.0
+Croydon East,1950,Q84,London,Greater London,0.0
+Croydon North,1918,Q84,London,Greater London,0.0
+Croydon North East,1955,Q84,London,Greater London,0.0
+Croydon North West,1955,Q84,London,Greater London,0.0
+Croydon South,1918,Q84,London,Greater London,0.0
+Croydon West,1950,Q84,London,Greater London,0.0
+Dagenham,1945,Q84,London,Greater London,0.0
+Darlington,1868,Q213181,Darlington,name,0.7
+Dartford,1885,Q858775,Dartford,name,3.8
+Darwen,1885,Q1166842,Darwen,name,0.0
+Daventry,1918,Q641756,Daventry,name,7.3
+Denbigh,1918,Q1186888,Denbigh,name,0.0
+Denbigh Boroughs,1868,Q1186888,Denbigh,name,0.0
+Deptford,1885,Q84,London,Greater London,0.0
+Derby,1868,Q43475,Derby,name,0.0
+Derby North,1950,Q43475,Derby,name,3.3
+Derby South,1950,Q43475,Derby,name,3.0
+Devizes,1868,Q1026699,Devizes,name,0.1
+Dewsbury,1868,Q525508,Dewsbury,name,2.7
+Doncaster,1885,Q58900,Doncaster,name,0.3
+Dorchester,1868,Q503331,Dorchester,name,0.0
+Dorking,1950,Q540333,Dorking,name,0.1
+Dover,1868,Q179224,Dover,name,6.1
+Droylsden,1950,Q305076,Droylsden,name,0.0
+Dudley,1868,Q213832,Dudley,name,0.8
+Dulwich,1885,Q84,London,Greater London,0.0
+Dumbarton Burghs,1918,Q34779,Dumbarton,name,0.0
+Dumfries,1950,Q652035,Dumfries,name,0.6
+Dumfries Burghs,1868,Q652035,Dumfries,name,0.0
+Dundee,1868,Q123709,Dundee,name,0.3
+Dundee East,1950,Q123709,Dundee,name,10.8
+Dundee West,1950,Q123709,Dundee,name,8.6
+Dunfermline Burghs,1918,Q211950,Dunfermline,name,0.0
+Durham,1868,Q179815,Durham,name,1.0
+Ealing,1885,Q84,London,Greater London,0.0
+Ealing East,1945,Q84,London,Greater London,0.0
+Ealing North,1950,Q84,London,Greater London,0.0
+Ealing South,1950,Q84,London,Greater London,0.0
+Ealing West,1945,Q84,London,Greater London,0.0
+East Aberdeen and Kincardine,1918,Q36405,Aberdeen,and,2.5
+East Finsbury,1885,Q84,London,Greater London,0.0
+East Fulham,1918,Q3367868,Fulham,name,2.5
+East Ham North,1918,Q84,London,Greater London,0.0
+East Ham South,1918,Q84,London,Greater London,0.0
+East Huddersfield,1950,Q201812,Huddersfield,name,0.5
+East Kingston upon Hull,1885,Q128147,Kingston upon Hull,name,3.9
+East MIddlesbrough,1945,Q171866,Middlesbrough,name,1.8
+East Marylebone,1885,Q84,London,Greater London,0.0
+East Middlesbrough,1918,Q171866,Middlesbrough,name,1.8
+East Newcastle upon Tyne,1918,Q1425428,Newcastle upon Tyne,name,3.1
+East Retford,1868,Q2462685,Retford,name,2.5
+East Walthamstow,1918,Q84,London,Greater London,0.0
+East Wolverhampton,1885,Q126269,Wolverhampton,name,2.5
+Eastbourne,1885,Q208262,Eastbourne,name,1.3
+Eastleigh,1955,Q731069,Eastleigh,name,3.0
+Ebbw Vale,1918,Q2297559,Ebbw Vale,name,0.0
+Eccles,1885,Q2342197,Eccles,name,0.3
+Edinburgh,1868,Q23436,Edinburgh,name,0.0
+Edinburgh Central,1885,Q23436,Edinburgh,name,0.0
+Edinburgh East,1885,Q23436,Edinburgh,name,3.2
+Edinburgh Leith,1950,Q23436,Edinburgh,prefix,3.2
+Edinburgh North,1918,Q23436,Edinburgh,name,2.5
+Edinburgh Pentlands,1950,Q23436,Edinburgh,prefix,0.0
+Edinburgh South,1885,Q23436,Edinburgh,name,4.8
+Edinburgh West,1885,Q23436,Edinburgh,name,9.0
+Edmonton,1918,Q84,London,Greater London,0.0
+Egremont,1885,Q2486621,Egremont,name,0.0
+Elgin Burghs,1868,Q841074,Elgin,name,0.0
+Elland,1885,Q2265847,Elland,name,2.6
+Enfield,1885,Q84,London,Greater London,0.0
+Enfield East,1950,Q84,London,Greater London,0.0
+Enfield West,1950,Q84,London,Greater London,0.0
+Epping,1885,Q990775,Epping,name,0.0
+Epsom,1885,Q993164,Epsom,name,0.7
+Erith and Crayford,1955,Q84,London,Greater London,0.0
+Esher,1950,Q637482,Esher,name,2.2
+Eton and Slough,1945,Q617407,Eton,and,0.0
+Eton and Slough,1945,Q211907,Slough,and,2.7
+Evesham,1868,Q585963,Evesham,name,0.0
+Exeter,1868,Q134672,Exeter,name,0.6
+Falkirk,1868,Q623687,Falkirk,name,6.5
+Falmouth and Camborne,1950,Q478029,Falmouth,and,9.5
+Falmouth and Camborne,1950,Q1774403,Camborne,and,8.8
+Fareham,1885,Q1017943,Fareham,name,2.4
+Farnham,1918,Q643160,Farnham,name,0.2
+Farnworth,1918,Q1397011,Farnworth,name,0.0
+Faversham,1885,Q1000115,Faversham,name,0.0
+Feltham,1955,Q84,London,Greater London,0.0
+Finchley,1918,Q84,London,Greater London,0.0
+Finsbury,1868,Q84,London,Greater London,0.0
+Flint Boroughs,1868,Q1428848,Flint,name,0.0
+Folkestone and Hythe,1950,Q967166,Hythe,and,3.2
+Folkestone and Hythe,1950,Q375314,Folkestone,and,7.1
+Frome,1868,Q1242441,Frome,name,0.0
+Fulham,1885,Q84,London,Greater London,0.0
+Gainsborough,1885,Q288082,Gainsborough,name,19.1
+Gateshead,1868,Q216372,Gateshead,name,0.8
+Gateshead East,1950,Q216372,Gateshead,name,0.8
+Gateshead West,1950,Q216372,Gateshead,name,0.8
+Gillingham,1918,Q610238,Gillingham,name,0.5
+Glasgow,1868,Q4093,Glasgow,name,0.9
+Glasgow Blackfriars and Hutchesontown,1885,Q4093,Glasgow,and,0.9
+Glasgow Bridgeton,1885,Q4093,Glasgow,prefix,2.2
+Glasgow Camlachie,1885,Q4093,Glasgow,prefix,2.3
+Glasgow Cathcart,1918,Q4093,Glasgow,prefix,5.0
+Glasgow Central,1885,Q4093,Glasgow,name,2.6
+Glasgow College,1885,Q4093,Glasgow,prefix,0.9
+Glasgow Craigton,1955,Q4093,Glasgow,prefix,4.5
+Glasgow Gorbals,1918,Q4093,Glasgow,prefix,1.5
+Glasgow Govan,1885,Q4093,Glasgow,prefix,4.4
+Glasgow Hillhead,1918,Q4093,Glasgow,prefix,2.8
+Glasgow Kelvingrove,1918,Q4093,Glasgow,prefix,2.2
+Glasgow Maryhill,1918,Q4093,Glasgow,prefix,4.6
+Glasgow Partick,1918,Q4093,Glasgow,prefix,3.5
+Glasgow Pollok,1918,Q4093,Glasgow,prefix,0.9
+Glasgow Provan,1955,Q4093,Glasgow,prefix,0.9
+Glasgow Scotstoun,1950,Q4093,Glasgow,prefix,6.7
+Glasgow Shettleston,1918,Q4093,Glasgow,prefix,5.3
+Glasgow Springburn,1918,Q4093,Glasgow,prefix,2.8
+Glasgow St Rollox,1885,Q4093,Glasgow,prefix,0.9
+Glasgow Tradeston,1885,Q4093,Glasgow,prefix,1.7
+Glasgow Woodside,1950,Q4093,Glasgow,prefix,1.7
+Gloucester,1868,Q170497,Gloucester,name,0.3
+Goole,1950,Q1000740,Goole,name,0.5
+Gosport and Fareham,1950,Q936263,Gosport,and,4.3
+Gosport and Fareham,1950,Q1017943,Fareham,and,3.6
+Grantham,1868,Q846683,Grantham,name,0.0
+Gravesend,1868,Q676689,Gravesend,name,0.0
+Great Grimsby,1868,Q179406,Grimsby,alias,0.8
+Great Yarmouth,1885,Q237253,Great Yarmouth,name,10.2
+Greenock,1868,Q217831,Greenock,name,0.0
+Greenwich,1868,Q84,London,Greater London,0.0
+Guildford,1868,Q213465,Guildford,name,2.0
+Hackney,1868,Q84,London,Greater London,0.0
+Hackney Central,1885,Q84,London,Greater London,0.0
+Hackney North,1885,Q84,London,Greater London,0.0
+Hackney North and Stoke Newington,1950,Q84,London,Greater London,0.0
+Hackney South,1885,Q84,London,Greater London,0.0
+Haddington Burghs,1868,Q2281658,Haddington,name,0.0
+Haggerston,1885,Q84,London,Greater London,0.0
+Halifax,1868,Q826561,Halifax,name,1.6
+Hamilton,1918,Q4131,Hamilton,name,0.0
+Hammersmith,1885,Q84,London,Greater London,0.0
+Hampstead,1885,Q84,London,Greater London,0.0
+Harrogate,1950,Q215829,Harrogate,name,0.0
+Harrow,1885,Q84,London,Greater London,0.0
+Harrow Central,1950,Q84,London,Greater London,0.0
+Harrow East,1945,Q84,London,Greater London,0.0
+Harrow West,1945,Q84,London,Greater London,0.0
+Harwich,1868,Q990616,Harwich,name,10.0
+Hastings,1868,Q29245,Hastings,name,1.1
+Haverfordwest,1868,Q990103,Haverfordwest,name,0.0
+Hawick Burghs,1868,Q407183,Hawick,name,0.0
+Hayes and Harlington,1950,Q84,London,Greater London,0.0
+Helston,1868,Q1012535,Helston,name,0.0
+Hemel Hempstead,1918,Q3532,Hemel Hempstead,name,5.2
+Hemsworth,1918,Q2556975,Hemsworth,name,0.5
+Hendon,1918,Q84,London,Greater London,0.0
+Hendon North,1945,Q84,London,Greater London,0.0
+Hendon South,1945,Q84,London,Greater London,0.0
+Hereford,1868,Q204720,Hereford,name,6.4
+Hertford,1868,Q9681,Hertford,name,0.0
+Heston and Isleworth,1945,Q84,London,Greater London,0.0
+Hexham,1885,Q947400,Hexham,name,0.5
+Heywood,1885,Q1013970,Heywood,name,0.0
+Heywood and Radcliffe,1918,Q968937,Radcliffe,and,7.8
+Heywood and Radcliffe,1918,Q1013970,Heywood,and,0.0
+Heywood and Royton,1950,Q1013970,Heywood,and,0.0
+Heywood and Royton,1950,Q2338847,Royton,and,7.0
+Hitchin,1885,Q19798,Hitchin,name,0.4
+Holborn,1885,Q84,London,Greater London,0.0
+Holborn and St Pancras South,1950,Q84,London,Greater London,0.0
+Holmfirth,1885,Q2469027,Holmfirth,name,0.0
+Honiton,1885,Q647123,Honiton,name,0.0
+Horncastle,1885,Q1628403,Horncastle,name,0.0
+Hornchurch,1945,Q84,London,Greater London,0.0
+Hornsey,1885,Q84,London,Greater London,0.0
+Horsham,1868,Q177544,Horsham,name,2.2
+Horsham and Worthing,1918,Q177544,Horsham,and,2.2
+Horsham and Worthing,1918,Q671348,Worthing,and,25.6
+Houghton-le-Spring,1885,Q2326854,Houghton-le-Spring,name,0.0
+Hove,1950,Q989616,Hove,name,0.4
+Howden,1955,Q1365059,Howden,name,0.3
+Hoxton,1885,Q84,London,Greater London,0.0
+Huddersfield,1868,Q201812,Huddersfield,name,1.9
+Huntingdon,1868,Q685640,Huntingdon,name,7.1
+Huyton,1950,Q1639484,Huyton,name,0.0
+Hyde,1885,Q2080165,Hyde,name,0.0
+Hythe,1868,Q967166,Hythe,name,0.0
+Ilford,1918,Q84,London,Greater London,0.0
+Ilford North,1945,Q84,London,Greater London,0.0
+Ilford South,1945,Q84,London,Greater London,0.0
+Ilkeston,1885,Q2061067,Ilkeston,name,0.0
+Inverness,1918,Q160493,Inverness,name,0.0
+Inverness Burghs,1868,Q160493,Inverness,name,0.0
+Ipswich,1868,Q184775,Ipswich,name,0.3
+Islington East,1885,Q84,London,Greater London,0.0
+Islington North,1885,Q84,London,Greater London,0.0
+Islington South,1885,Q84,London,Greater London,0.0
+Islington South West,1950,Q84,London,Greater London,0.0
+Islington West,1885,Q84,London,Greater London,0.0
+Jarrow,1885,Q782155,Jarrow,name,2.6
+Keighley,1885,Q990168,Keighley,name,6.1
+Kendal,1868,Q994575,Kendal,name,0.0
+Kennington,1885,Q84,London,Greater London,0.0
+Kensington North,1885,Q84,London,Greater London,0.0
+Kensington South,1885,Q84,London,Greater London,0.0
+Kettering,1918,Q984613,Kettering,name,2.5
+Kidderminster,1868,Q844062,Kidderminster,name,0.0
+Kilmarnock,1918,Q576562,Kilmarnock,name,0.0
+Kilmarnock Burghs,1868,Q576562,Kilmarnock,name,0.0
+King's Lynn,1868,Q157341,King's Lynn,name,0.0
+Kingston upon Hull,1868,Q128147,Kingston upon Hull,name,0.0
+Kingston upon Hull Haltemprice,1950,Q128147,Kingston upon Hull,prefix,6.3
+Kingston upon Thames,1885,Q84,London,Greater London,0.0
+Kingswinford,1885,Q6413749,Kingswinford,name,0.0
+Kirkcaldy Burghs,1868,Q691685,Kirkcaldy,name,0.0
+Knaresborough,1868,Q535902,Knaresborough,name,0.0
+Knutsford,1885,Q1470791,Knutsford,name,0.0
+Lambeth,1868,Q84,London,Greater London,0.0
+Lambeth North,1885,Q84,London,Greater London,0.0
+Lanark,1918,Q1002124,Lanark,name,0.3
+Lancaster,1885,Q205905,Lancaster,name,0.2
+Launceston,1868,Q287590,Launceston,name,0.0
+Leeds,1868,Q39121,Leeds,name,0.0
+Leeds Central,1885,Q39121,Leeds,name,2.4
+Leeds East,1885,Q39121,Leeds,name,5.5
+Leeds North,1885,Q39121,Leeds,name,2.5
+Leeds North East,1918,Q39121,Leeds,name,6.1
+Leeds North West,1950,Q39121,Leeds,name,6.9
+Leeds South,1885,Q39121,Leeds,name,2.5
+Leeds South East,1918,Q39121,Leeds,name,3.5
+Leeds West,1885,Q39121,Leeds,name,2.1
+Leek,1885,Q2070717,Leek,name,0.0
+Leicester,1868,Q83065,Leicester,name,0.0
+Leicester East,1918,Q83065,Leicester,name,3.6
+Leicester North East,1950,Q83065,Leicester,name,3.5
+Leicester North West,1950,Q83065,Leicester,name,3.5
+Leicester South,1918,Q83065,Leicester,name,4.0
+Leicester South East,1950,Q83065,Leicester,name,3.5
+Leicester South West,1950,Q83065,Leicester,name,3.5
+Leicester West,1918,Q83065,Leicester,name,2.4
+Leigh,1885,Q2588021,Leigh,name,1.0
+Leith,1918,Q1018540,Leith,name,0.0
+Leith Burghs,1868,Q1018540,Leith,name,0.0
+Leominster,1868,Q550424,Leominster,name,2.7
+Lewes,1868,Q246884,Lewes,name,0.5
+Lewisham,1885,Q84,London,Greater London,0.0
+Lewisham East,1918,Q84,London,Greater London,0.0
+Lewisham North,1950,Q84,London,Greater London,0.0
+Lewisham South,1950,Q84,London,Greater London,0.0
+Lewisham West,1918,Q84,London,Greater London,0.0
+Leyton,1950,Q84,London,Greater London,0.0
+Leyton East,1918,Q84,London,Greater London,0.0
+Leyton West,1918,Q84,London,Greater London,0.0
+Lichfield,1868,Q207371,Lichfield,name,8.0
+Lichfield and Tamworth,1950,Q207371,Lichfield,and,8.0
+Lichfield and Tamworth,1950,Q704864,Tamworth,and,15.9
+Limehouse,1885,Q84,London,Greater London,0.0
+Lincoln,1868,Q180057,Lincoln,name,2.3
+Liskeard,1868,Q2019908,Liskeard,name,0.0
+Liverpool,1868,Q24826,Liverpool,name,5.1
+Liverpool Abercromby,1885,Q24826,Liverpool,prefix,5.1
+Liverpool East Toxteth,1885,Q24826,Liverpool,prefix,7.6
+Liverpool Edge Hill,1918,Q24826,Liverpool,prefix,2.6
+Liverpool Everton,1885,Q24826,Liverpool,prefix,2.1
+Liverpool Exchange,1885,Q24826,Liverpool,prefix,5.1
+Liverpool Fairfield,1918,Q24826,Liverpool,prefix,3.6
+Liverpool Garston,1950,Q24826,Liverpool,prefix,10.0
+Liverpool Kirkdale,1885,Q24826,Liverpool,prefix,3.0
+Liverpool Scotland,1885,Q24826,Liverpool,prefix,1.1
+Liverpool Toxteth,1950,Q24826,Liverpool,prefix,2.6
+Liverpool Walton,1885,Q24826,Liverpool,prefix,4.7
+Liverpool Wavertree,1918,Q24826,Liverpool,prefix,5.0
+Liverpool West Derby,1885,Q24826,Liverpool,prefix,7.6
+Liverpool West Toxteth,1885,Q24826,Liverpool,prefix,2.7
+Llandaff and Barry,1918,Q809009,Barry,and,10.4
+Llanelli,1970,Q990125,Llanelli,name,6.7
+Loughborough,1885,Q537323,Loughborough,name,0.3
+Louth,1970,Q1554129,Louth,name,0.1
+Lowestoft,1885,Q986007,Lowestoft,name,5.8
+Ludlow,1868,Q839811,Ludlow,name,13.6
+Luton,1885,Q203889,Luton,name,1.7
+Lymington,1868,Q1018133,Lymington,name,0.0
+Macclesfield,1868,Q868637,Macclesfield,name,6.5
+Maidstone,1868,Q213180,Maidstone,name,0.0
+Maldon,1868,Q1011062,Maldon,name,6.5
+Malmesbury,1868,Q570153,Malmesbury,name,0.0
+Malton,1868,Q280506,Malton,name,0.0
+Manchester,1868,Q18125,Manchester,name,7.0
+Manchester Ardwick,1918,Q18125,Manchester,prefix,2.1
+Manchester Blackley,1918,Q18125,Manchester,prefix,4.4
+Manchester Cheetham,1950,Q18125,Manchester,prefix,7.0
+Manchester Clayton,1918,Q18125,Manchester,prefix,7.0
+Manchester East,1885,Q18125,Manchester,name,7.3
+Manchester Exchange,1918,Q18125,Manchester,prefix,7.0
+Manchester Gorton,1918,Q18125,Manchester,prefix,2.6
+Manchester Hulme,1918,Q18125,Manchester,prefix,1.4
+Manchester Moss Side,1918,Q18125,Manchester,prefix,2.3
+Manchester North,1885,Q18125,Manchester,name,4.1
+Manchester North East,1885,Q18125,Manchester,name,5.0
+Manchester North West,1885,Q18125,Manchester,name,5.3
+Manchester Openshaw,1955,Q18125,Manchester,prefix,7.0
+Manchester Platting,1918,Q18125,Manchester,prefix,7.0
+Manchester Rusholme,1918,Q18125,Manchester,prefix,2.6
+Manchester South,1885,Q18125,Manchester,name,9.5
+Manchester South West,1885,Q18125,Manchester,name,9.9
+Manchester Withington,1918,Q18125,Manchester,prefix,5.2
+Manchester Wythenshawe,1950,Q18125,Manchester,prefix,9.3
+Mansfield,1885,Q841979,Mansfield,name,0.5
+Marlborough,1868,Q539528,Marlborough,name,0.0
+Marylebone,1868,Q84,London,Greater London,0.0
+Merthyr Tydfil,1868,Q752762,Merthyr Tydfil,name,0.0
+Merton and Morden,1950,Q84,London,Greater London,0.0
+Middlesbrough,1868,Q171866,Middlesbrough,name,1.8
+Middlesex,1868,Q84,London,Greater London,0.0
+Middleton,1885,Q2560244,Middleton,name,0.0
+Middleton and Prestwich,1918,Q2560244,Middleton,and,0.0
+Middleton and Prestwich,1918,Q1003559,Prestwich,and,6.8
+Midhurst,1868,Q1700135,Midhurst,name,0.0
+Midlothian and Peebles,1950,Q1011507,Peebles,and,19.6
+Midlothian and Peebles Northern,1918,Q1011507,Peebles,and,19.6
+Mitcham,1918,Q84,London,Greater London,0.0
+Monmouth,1918,Q156990,Monmouth,name,7.8
+Monmouth Boroughs,1868,Q156990,Monmouth,name,7.8
+Montrose Burghs,1868,Q420303,Montrose,name,0.0
+Morley,1885,Q1021179,Morley,name,0.0
+Morpeth,1868,Q736785,Morpeth,name,0.0
+Mossley,1918,Q613847,Mossley,name,0.0
+Motherwell,1918,Q737547,Motherwell,name,0.0
+Nantwich,1955,Q1077003,Nantwich,name,0.0
+Neath,1918,Q2003342,Neath,name,7.3
+Nelson and Colne,1918,Q1857774,Nelson,and,0.0
+Nelson and Colne,1918,Q2374484,Colne,and,3.6
+New Shoreham,1868,Q770599,Shoreham-by-Sea,alias,0.0
+Newbury,1885,Q655874,Newbury,name,6.7
+Newcastle upon Tyne,1868,Q1425428,Newcastle upon Tyne,name,0.0
+Newcastle-under-Lyme,1868,Q868642,Newcastle-under-Lyme,name,5.8
+Newmarket,1885,Q1382713,Newmarket,name,0.0
+Newport,1918,Q101254,Newport,name,0.0
+Normanton,1885,Q1027131,Normanton,name,0.3
+North East Bethnal Green,1885,Q84,London,Greater London,0.0
+North Hammersmith,1918,Q84,London,Greater London,0.0
+North Kingston upon Hull,1950,Q128147,Kingston upon Hull,name,3.5
+North Newcastle upon Tyne,1918,Q1425428,Newcastle upon Tyne,name,6.1
+North Reading,1950,Q161491,Reading,name,0.0
+North Stoke-on-Trent,1950,Q134902,Stoke-on-Trent,name,5.7
+Northallerton,1868,Q920381,Northallerton,name,0.0
+Northampton,1868,Q192240,Northampton,name,0.0
+Northwich,1885,Q2009813,Northwich,name,0.0
+Norwich,1868,Q130191,Norwich,name,5.5
+Norwich North,1950,Q130191,Norwich,name,2.4
+Norwich South,1950,Q130191,Norwich,name,1.8
+Norwood,1885,Q84,London,Greater London,0.0
+Nottingham,1868,Q41262,Nottingham,name,0.0
+Nottingham Central,1918,Q41262,Nottingham,name,0.0
+Nottingham East,1885,Q41262,Nottingham,name,1.4
+Nottingham North,1955,Q41262,Nottingham,name,5.7
+Nottingham North West,1950,Q41262,Nottingham,name,3.5
+Nottingham South,1885,Q41262,Nottingham,name,4.1
+Nottingham West,1885,Q41262,Nottingham,name,2.5
+Nuneaton,1885,Q175632,Nuneaton,name,2.8
+Oldbury and Halesowen,1950,Q1857563,Oldbury,and,0.0
+Oldbury and Halesowen,1950,Q612260,Halesowen,and,6.5
+Oldham,1868,Q202628,Oldham,name,0.0
+Oldham East,1950,Q202628,Oldham,name,2.5
+Oldham West,1950,Q202628,Oldham,name,2.5
+Ormskirk,1885,Q1020958,Ormskirk,name,0.0
+Orpington,1945,Q84,London,Greater London,0.0
+Oswestry,1885,Q1009221,Oswestry,name,0.2
+Otley,1885,Q658902,Otley,name,0.0
+Oxford,1868,Q34217,Oxford,name,0.3
+Paisley,1868,Q211870,Paisley,name,0.0
+Peckham,1885,Q84,London,Greater London,0.0
+Peebles and South Midlothian,1918,Q1011507,Peebles,and,2.5
+Pembroke Boroughs,1868,Q1762242,Pembroke,name,0.0
+Pembroke and Haverfordwest,1885,Q990103,Haverfordwest,alias,14.4
+Pembroke and Haverfordwest,1885,Q1762242,Pembroke,alias,0.0
+Penistone,1918,Q2010576,Penistone,name,0.0
+Penrith,1885,Q798906,Penrith,name,0.0
+Penrith and Cockermouth,1918,Q798906,Penrith,and,0.0
+Penrith and The Border,1950,Q798906,Penrith,and,5.3
+Penryn and Falmouth,1868,Q478029,Falmouth,alias,3.6
+Perth,1868,Q203000,Perth,name,0.0
+Peterborough,1868,Q172438,Peterborough,name,1.3
+Petersfield,1868,Q1247815,Petersfield,name,0.0
+Plaistow,1918,Q84,London,Greater London,0.0
+Plymouth,1868,Q43382,Plymouth,name,0.0
+Plymouth Devonport,1918,Q43382,Plymouth,prefix,4.3
+Plymouth Drake,1918,Q43382,Plymouth,prefix,0.9
+Plymouth Sutton,1918,Q43382,Plymouth,prefix,0.2
+Pontefract,1868,Q1009235,Pontefract,name,0.0
+Pontypool,1918,Q1021164,Pontypool,name,0.0
+Pontypridd,1918,Q1024900,Pontypridd,name,1.0
+Poole,1868,Q203349,Poole,name,0.4
+Poplar,1885,Q84,London,Greater London,0.0
+Portsmouth,1868,Q72259,Portsmouth,name,0.0
+Portsmouth Central,1918,Q72259,Portsmouth,name,0.0
+Portsmouth Langstone,1950,Q72259,Portsmouth,prefix,0.0
+Portsmouth North,1918,Q72259,Portsmouth,name,4.5
+Portsmouth South,1918,Q72259,Portsmouth,name,2.2
+Portsmouth West,1950,Q72259,Portsmouth,name,2.5
+Preston,1868,Q184090,Preston,name,1.5
+Preston North,1950,Q184090,Preston,name,1.5
+Preston South,1950,Q184090,Preston,name,1.5
+Prestwich,1885,Q1003559,Prestwich,name,0.0
+Pudsey,1885,Q1009290,Pudsey,name,4.6
+Pudsey and Otley,1918,Q1009290,Pudsey,and,4.6
+Pudsey and Otley,1918,Q658902,Otley,and,7.7
+Putney,1918,Q84,London,Greater London,0.0
+Radcliffe-cum-Farnworth,1885,Q968937,Radcliffe,alias,0.1
+Radcliffe-cum-Farnworth,1885,Q1397011,Farnworth,alias,5.1
+Ramsey,1885,Q547659,Ramsey,name,0.0
+Reading,1868,Q161491,Reading,name,0.0
+Reigate,1885,Q1018418,Reigate,name,2.4
+Richmond (Surrey),1918,Q84,London,Greater London,0.0
+Richmond (Yorks),1868,Q1009324,Richmond,name,5.5
+Richmond upon Thames,1970,Q84,London,Greater London,0.0
+Ripon,1868,Q661529,Ripon,name,0.0
+Rochdale,1868,Q474605,Rochdale,name,0.4
+Rochester,1868,Q507517,Rochester,name,0.6
+Rochester and Chatham,1950,Q507517,Rochester,and,0.9
+Rochester and Chatham,1950,Q729006,Chatham,and,0.5
+Romford,1885,Q84,London,Greater London,0.0
+Rotherham,1885,Q217039,Rotherham,name,0.0
+Rotherhithe,1885,Q84,London,Greater London,0.0
+Rothwell,1918,Q2162284,Rothwell,name,0.0
+Rowley Regis and Tipton,1950,Q1684337,Tipton,and,5.2
+Rowley Regis and Tipton,1950,Q2571152,Rowley Regis,and,0.0
+Roxburgh and Selkirk,1918,Q772507,Selkirk,and,22.9
+Royton,1918,Q2338847,Royton,name,0.0
+Rugby,1885,Q623765,Rugby,name,7.0
+Ruislip-Northwood,1950,Q84,London,Greater London,0.0
+Runcorn,1950,Q1009316,Runcorn,name,0.0
+Rutherglen,1918,Q2287588,Rutherglen,name,5.9
+Rutland and Stamford,1918,Q1000662,Stamford,and,6.7
+Rye,1868,Q1020800,Rye,name,0.0
+Saffron Walden,1885,Q183329,Saffron Walden,name,11.1
+Salford,1868,Q47952,Salford,name,1.3
+Salford East,1950,Q47952,Salford,name,1.3
+Salford North,1885,Q47952,Salford,name,1.3
+Salford South,1885,Q47952,Salford,name,1.3
+Salford West,1885,Q47952,Salford,name,1.3
+Salisbury,1868,Q160642,Salisbury,name,0.5
+Sandwich,1868,Q26163,Sandwich,name,0.0
+Scarborough,1868,Q743521,Scarborough,name,0.0
+Scarborough and Whitby,1918,Q852778,Whitby,and,13.5
+Scarborough and Whitby,1918,Q743521,Scarborough,and,14.3
+Seaham,1918,Q2345990,Seaham,name,0.0
+Sedgefield,1918,Q14522524,Sedgefield,name,6.4
+Sevenoaks,1885,Q939838,Sevenoaks,name,6.1
+Shaftesbury,1868,Q631444,Shaftesbury,name,0.0
+Sheffield,1868,Q42448,Sheffield,name,0.0
+Sheffield Attercliffe,1885,Q42448,Sheffield,prefix,3.0
+Sheffield Brightside,1885,Q42448,Sheffield,prefix,3.6
+Sheffield Central,1885,Q42448,Sheffield,name,0.7
+Sheffield Ecclesall,1885,Q42448,Sheffield,prefix,3.9
+Sheffield Hallam,1885,Q42448,Sheffield,prefix,4.5
+Sheffield Heeley,1950,Q42448,Sheffield,prefix,1.3
+Sheffield Hillsborough,1918,Q42448,Sheffield,prefix,3.2
+Sheffield Neepsend,1950,Q42448,Sheffield,prefix,1.4
+Sheffield Park,1918,Q42448,Sheffield,prefix,0.0
+Shipley,1885,Q1421532,Shipley,name,2.4
+Shoreditch,1918,Q84,London,Greater London,0.0
+Shoreditch and Finsbury,1950,Q84,London,Greater London,0.0
+Shrewsbury,1868,Q201970,Shrewsbury,name,7.3
+Silvertown,1918,Q84,London,Greater London,0.0
+Skipton,1885,Q516131,Skipton,name,0.0
+Sleaford,1885,Q1891939,Sleaford,name,0.0
+Smethwick,1918,Q1018565,Smethwick,name,2.4
+Solihull,1945,Q397343,Solihull,name,0.6
+South Hammersmith,1918,Q84,London,Greater London,0.0
+South Reading,1950,Q161491,Reading,name,0.0
+South Stoke-on-Trent,1950,Q134902,Stoke-on-Trent,name,2.9
+South West Bethnal Green,1885,Q84,London,Greater London,0.0
+South Wolverhampton,1885,Q126269,Wolverhampton,name,2.5
+Southall,1945,Q84,London,Greater London,0.0
+Southampton,1868,Q79848,Southampton,name,0.0
+Southampton Itchen,1950,Q79848,Southampton,prefix,4.0
+Southampton Test,1950,Q79848,Southampton,prefix,3.1
+Southend-on-Sea,1918,Q203995,Southend-on-Sea,name,0.1
+Southgate,1950,Q84,London,Greater London,0.0
+Southport,1885,Q868647,Southport,name,0.1
+Southwark,1868,Q84,London,Greater London,0.0
+Southwark Central,1918,Q84,London,Greater London,0.0
+Southwark North,1918,Q84,London,Greater London,0.0
+Southwark South East,1918,Q84,London,Greater London,0.0
+Southwark West,1885,Q84,London,Greater London,0.0
+Spalding,1885,Q1185203,Spalding,name,0.0
+Spennymoor,1918,Q2219517,Spennymoor,name,0.0
+St Albans,1885,Q6226,St Albans,name,1.7
+St Andrews Burghs,1868,Q207736,St Andrews,name,14.9
+St Austell,1885,Q772614,St Austell,name,0.0
+"St George's, Hanover Square",1885,Q84,London,Greater London,0.0
+St Helens,1885,Q153647,St Helens,name,0.0
+St Ives,1868,Q724182,St Ives,name,0.0
+St Pancras East,1885,Q84,London,Greater London,0.0
+St Pancras North,1885,Q84,London,Greater London,0.0
+St Pancras South West,1918,Q84,London,Greater London,0.0
+St Pancras West,1885,Q84,London,Greater London,0.0
+Stafford,1868,Q826782,Stafford,name,3.3
+Stafford and Stone,1950,Q826782,Stafford,and,3.3
+Stafford and Stone,1950,Q2449737,Stone,and,13.5
+Stalybridge,1868,Q1398653,Stalybridge,name,0.0
+Stalybridge and Hyde,1918,Q1398653,Stalybridge,and,2.9
+Stalybridge and Hyde,1918,Q2080165,Hyde,and,2.0
+Stamford,1868,Q1000662,Stamford,name,0.0
+Stepney,1885,Q84,London,Greater London,0.0
+Stirling Burghs,1868,Q182923,Stirling,name,9.0
+Stirling and Falkirk,1918,Q623687,Falkirk,and,7.9
+Stirling and Falkirk,1918,Q182923,Stirling,and,8.3
+Stockport,1868,Q18655,Stockport,name,1.4
+Stockport North,1950,Q18655,Stockport,name,1.4
+Stockport South,1950,Q18655,Stockport,name,1.4
+Stockton-on-Tees,1868,Q989418,Stockton-on-Tees,name,2.4
+Stoke Newington,1918,Q84,London,Greater London,0.0
+Stoke-on-Trent,1868,Q134902,Stoke-on-Trent,name,0.8
+Stone,1918,Q2449737,Stone,name,3.4
+Stourbridge,1918,Q661707,Stourbridge,name,1.5
+Stowmarket,1885,Q2454255,Stowmarket,name,0.7
+Strand,1885,Q84,London,Greater London,0.0
+Stratford,1918,Q84,London,Greater London,0.0
+Stratford-on-Avon,1885,Q189288,Stratford-upon-Avon,alias,4.8
+Streatham,1918,Q84,London,Greater London,0.0
+Stretford,1885,Q374458,Stretford,name,0.0
+Stroud,1868,Q281749,Stroud,name,4.5
+Stroud and Thornbury,1950,Q1234779,Thornbury,and,22.3
+Stroud and Thornbury,1950,Q281749,Stroud,and,4.5
+Sudbury,1885,Q1021319,Sudbury,name,0.0
+Sudbury and Woodbridge,1950,Q1021319,Sudbury,and,0.0
+Sunderland,1868,Q188304,Sunderland,name,0.0
+Sunderland North,1950,Q188304,Sunderland,name,1.9
+Sunderland South,1950,Q188304,Sunderland,name,1.6
+Surbiton,1955,Q84,London,Greater London,0.0
+Sutton Coldfield,1945,Q868196,Sutton Coldfield,name,0.9
+Sutton and Cheam,1945,Q84,London,Greater London,0.0
+Swansea District,1868,Q23051,Swansea,alias,5.1
+Swansea East,1918,Q23051,Swansea,name,4.3
+Swansea Town,1885,Q23051,Swansea,alias,5.1
+Swansea West,1918,Q23051,Swansea,name,2.5
+Swindon,1918,Q200942,Swindon,name,3.1
+Tamworth,1868,Q704864,Tamworth,name,4.0
+Taunton,1868,Q845619,Taunton,name,0.0
+Tavistock,1868,Q668262,Tavistock,name,0.0
+Tewkesbury,1868,Q1000717,Tewkesbury,name,7.1
+The Hartlepools,1868,Q215752,Hartlepool,alias,4.9
+Thirsk,1868,Q641274,Thirsk,name,0.0
+Thornbury,1885,Q1234779,Thornbury,name,0.0
+Tiverton,1868,Q637298,Tiverton,name,0.0
+Tonbridge,1918,Q936183,Tonbridge,name,23.0
+Torquay,1885,Q209055,Torquay,name,0.0
+Totnes,1885,Q1007106,Totnes,name,9.4
+Tottenham,1885,Q84,London,Greater London,0.0
+Tottenham North,1918,Q84,London,Greater London,0.0
+Tottenham South,1918,Q84,London,Greater London,0.0
+Truro,1868,Q180803,Truro,name,0.0
+Tunbridge,1885,Q665489,Royal Tunbridge Wells,alias,6.8
+Twickenham,1918,Q84,London,Greater London,0.0
+Tynemouth,1885,Q1755020,Tynemouth,name,1.8
+Tynemouth and North Shields,1868,Q1755020,Tynemouth,alias,2.1
+Upton,1918,Q84,London,Greater London,0.0
+Uxbridge,1885,Q84,London,Greater London,0.0
+Vauxhall,1950,Q84,London,Greater London,0.0
+Wakefield,1868,Q216638,Wakefield,name,0.1
+Wallasey,1918,Q780923,Wallasey,name,0.8
+Wallingford,1868,Q988100,Wallingford,name,0.0
+Wallsend,1918,Q1248150,Wallsend,name,0.1
+Walsall,1868,Q504530,Walsall,name,0.6
+Walsall North,1955,Q504530,Walsall,name,3.9
+Walsall South,1955,Q504530,Walsall,name,1.1
+Walthamstow,1885,Q84,London,Greater London,0.0
+Walworth,1885,Q84,London,Greater London,0.0
+Wandsworth,1885,Q84,London,Greater London,0.0
+Wandsworth Central,1918,Q84,London,Greater London,0.0
+Wanstead and Woodford,1964,Q84,London,Greater London,0.0
+Wareham,1868,Q387419,Wareham,name,0.4
+Warrington,1868,Q215733,Warrington,name,0.0
+Warwick,1868,Q549761,Warwick,name,0.0
+Warwick and Leamington,1885,Q546635,Leamington Spa,alias,4.5
+Warwick and Leamington,1885,Q549761,Warwick,alias,2.3
+Watford,1885,Q2598,Watford,name,0.7
+Wednesbury,1868,Q501023,Wednesbury,name,0.0
+Wellingborough,1918,Q913499,Wellingborough,name,0.7
+Wellington,1885,Q1898698,Wellington,name,0.0
+Wellington (Somerset),1885,Q1026685,Wellington,name,0.0
+Wells,1885,Q212283,Wells,name,5.4
+Wembley North,1945,Q84,London,Greater London,0.0
+Wembley South,1945,Q84,London,Greater London,0.0
+West Fulham,1918,Q84,London,Greater London,0.0
+West Ham North,1885,Q84,London,Greater London,0.0
+West Ham South,1885,Q84,London,Greater London,0.0
+West Huddersfield,1950,Q201812,Huddersfield,name,1.5
+West Kingston upon Hull,1885,Q128147,Kingston upon Hull,name,15.1
+West Marylebone,1885,Q84,London,Greater London,0.0
+West Middlesbrough,1918,Q171866,Middlesbrough,name,1.8
+West Newcastle upon Tyne,1918,Q1425428,Newcastle upon Tyne,name,2.5
+West Walthamstow,1918,Q84,London,Greater London,0.0
+West Wolverhampton,1885,Q126269,Wolverhampton,name,2.4
+Westbury,1868,Q1234797,Westbury,name,0.3
+Westhoughton,1885,Q686319,Westhoughton,name,9.4
+Westminster,1868,Q84,London,Greater London,0.0
+Westminster Abbey,1918,Q84,London,Greater London,0.0
+Westminster St George's,1918,Q84,London,Greater London,0.0
+Weston-super-Mare,1918,Q845623,Weston-super-Mare,name,7.0
+Weymouth and Melcombe Regis,1868,Q661619,Weymouth,alias,0.4
+Whitechapel,1885,Q84,London,Greater London,0.0
+Whitechapel and St George's,1918,Q84,London,Greater London,0.0
+Whitehaven,1868,Q1012481,Whitehaven,name,0.0
+Wick Burghs,1868,Q1012502,Wick,name,0.0
+Widnes,1885,Q1022741,Widnes,name,0.0
+Wigan,1868,Q208143,Wigan,name,0.8
+Willesden East,1918,Q84,London,Greater London,0.0
+Willesden West,1918,Q84,London,Greater London,0.0
+Wilton,1868,Q1018668,Wilton,name,0.0
+Wimbledon,1885,Q84,London,Greater London,0.0
+Winchester,1868,Q172157,Winchester,name,0.6
+Windsor,1868,Q464955,Windsor,name,8.8
+Wisbech,1885,Q1012031,Wisbech,name,0.0
+Woking,1950,Q646225,Woking,name,3.2
+Wokingham,1885,Q1000679,Wokingham,name,10.4
+Wolverhampton,1868,Q126269,Wolverhampton,name,0.0
+Wood Green,1918,Q84,London,Greater London,0.0
+Woodbridge,1885,Q1021350,Woodbridge,name,0.0
+Woodford,1945,Q84,London,Greater London,0.0
+Woodstock,1868,Q752111,Woodstock,name,0.0
+Woolwich,1885,Q84,London,Greater London,0.0
+Woolwich East,1918,Q84,London,Greater London,0.0
+Woolwich West,1918,Q84,London,Greater London,0.0
+Worcester,1868,Q1646181,Worcester,name,1.7
+Workington,1918,Q1538358,Workington,name,0.8
+Worthing,1945,Q671348,Worthing,name,2.2
+Wrexham,1918,Q496368,Wrexham,name,4.4
+Wycombe,1868,Q64116,High Wycombe,alias,4.1
+Yeovil,1918,Q550110,Yeovil,name,13.2
+York,1868,Q42462,York,name,0.0

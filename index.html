@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Gladstone Road or Disraeli Street? | Political street names in Britain</title>
+<meta name="description" content="Every British street named after a Victorian statesman, mapped: Gladstone, Cobden and Bright against Beaconsfield and Disraeli. Did towns name their streets after the party they voted for?">
+<meta property="og:title" content="Gladstone Road or Disraeli Street?">
+<meta property="og:description" content="405 Gladstone streets, 221 Beaconsfields, 38 Disraelis. Liberal names win almost everywhere, and only faintly follow the town's vote.">
+<meta property="og:image" content="https://maps.tristanhotham.com/pm-streets/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/pm-streets/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<style>
+
+/* Parchment, iron-gall black, vermilion and river blue: the palette of The Inked World. */
+:root{
+  --bg:#F6EED8; --panel:#EFE3C4; --fg:#2B2119; --muted:#6E604E; --rule:#E2D3AE; --card:#FBF5E4; --border:#D3C29A;
+  --hot:#A3261B; --cool:#3D6E9E; --gold:#B8862B;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --hand:"MedievalSharp","Fraunces",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1A1612; --panel:#241E18; --fg:#EFE6D4; --muted:#ADA08B; --rule:#3A3128; --card:#211B15; --border:#4D4234;
+  --hot:#E07A6C; --cool:#8FB4DA; --gold:#E2B860; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1A1612; --panel:#241E18; --fg:#EFE6D4; --muted:#ADA08B; --rule:#3A3128; --card:#211B15; --border:#4D4234;
+  --hot:#E07A6C; --cool:#8FB4DA; --gold:#E2B860; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+.wrap{max-width:720px;margin:0 auto;padding-block:28px 64px}
+a{color:inherit;text-decoration-color:var(--hot);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:var(--hot);color:#fff;padding:5px 8px;font-weight:500}
+h2{font:800 34px/1.04 var(--display);letter-spacing:-.01em;margin:54px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--hot);display:block;letter-spacing:.1em;margin-bottom:10px}
+p{margin:0 0 16px}
+.lede::first-letter{font:400 76px/.8 var(--hand);float:left;margin:6px 10px 0 0;color:var(--hot)}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+ul.plain{padding-left:20px} ul.plain li{margin:4px 0}
+details{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:10px 0;margin:18px 0;font-size:16px}
+summary{font:500 13px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:var(--hot);border-color:var(--hot);color:#fff}
+footer{border-top:6px double var(--fg);margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:4px 8px;cursor:pointer;min-height:28px}
+.figure{margin:22px 0}
+.figure img{width:100%;display:block;border:1px solid var(--border);background:#F3E5BF}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:22px 0}
+.stat b{display:block;font:900 40px/1 var(--display);color:var(--hot)}
+.stat span{font:400 13px/1.35 var(--mono);color:var(--muted)}
+table.t{width:100%;border-collapse:collapse;font:400 13.5px/1.4 var(--mono);margin:12px 0 4px}
+table.t th{text-align:left;font-weight:500;border-bottom:2px solid var(--fg);padding:5px 6px 5px 0}
+table.t td{border-bottom:1px solid var(--rule);padding:5px 6px 5px 0;vertical-align:top}
+table.t td.r,table.t th.r{text-align:right}
+.tscroll{overflow-x:auto}
+
+/* ---- the map ---- */
+.topbar{height:40px;display:flex;align-items:center;gap:14px;margin:0 calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:0 max(14px,env(safe-area-inset-left,0px));border-bottom:3px double var(--fg);background:var(--bg);overflow:hidden;white-space:nowrap}
+.tb-name{font:400 19px/1 var(--hand);color:var(--hot);text-decoration:none;letter-spacing:.03em}
+.tb-k{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.tb-links{margin-left:auto;display:flex;gap:16px;align-items:center;font:500 12px/1 var(--mono)}
+.tb-links a{text-decoration:none}.tb-links a:hover{text-decoration:underline}
+.mapband{width:100vw;margin-left:calc(50% - 50vw)}
+.pane{position:relative;height:calc(100vh - 43px);height:calc(100svh - 43px);min-height:460px;border-bottom:1px solid #BCA676;background:#F3E5BF;overflow:hidden;flex:1 1 50%;min-width:0}
+.pane::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;box-shadow:inset 0 0 90px rgba(120,84,30,.22), inset 0 0 18px rgba(120,84,30,.18)}
+.cartouche{position:absolute;left:14px;top:14px;z-index:5;max-width:min(330px,calc(100% - 28px));background:rgba(251,243,220,.95);color:#2B2119;border:2px solid #2B2119;outline:1px solid #2B2119;outline-offset:-6px;padding:10px 14px 10px;box-shadow:0 3px 14px rgba(60,40,10,.22)}
+.cartouche::before,.cartouche::after{content:"";position:absolute;width:9px;height:9px;background:#A3261B;border:1px solid #2B2119;border-radius:50%}
+.cartouche::before{left:-6px;top:-6px}.cartouche::after{right:-6px;bottom:-6px}
+.cartouche h1{font:900 clamp(22px,2.3vw,30px)/1 var(--display);letter-spacing:-.015em;margin:6px 0 0;color:#2B2119}
+.cartouche h1 .a{color:#A3261B;font-family:var(--hand);font-weight:400;letter-spacing:.03em}
+.cartouche .dek{font-size:13.5px;line-height:1.36;margin:6px 0 0}
+.cartouche .byline{font-size:11px;color:#6E604E;margin-top:6px}
+.cartouche .kicker{color:#6E604E}
+.ct-fold{position:absolute;right:6px;top:5px;width:26px;height:26px;border:0;background:none;color:#A3261B;font:400 18px/1 var(--hand);cursor:pointer;padding:0}
+.ct-toggle{display:none;font:400 17px/1 var(--hand);color:#A3261B;background:none;border:0;padding:2px 0;cursor:pointer;letter-spacing:.03em;min-height:30px}
+.cartouche.folded .ct-body,.cartouche.folded .ct-fold{display:none}.cartouche.folded .ct-toggle{display:block}.cartouche.folded{padding:4px 11px}
+.ov{position:absolute;z-index:5;font:400 13px/1.3 var(--mono);color:#2B2119}
+.ov-top{right:54px;top:10px;max-width:calc(100% - 480px);display:flex;flex-direction:column;gap:6px;align-items:flex-end;pointer-events:none}
+.ov-top>*{pointer-events:auto}
+.srch{position:relative;width:min(340px,100%)}
+.srch input{width:100%;font:400 15px/1 var(--mono);background:rgba(251,245,228,.96);color:#2B2119;border:1px solid #9C8656;border-radius:3px;padding:9px 10px;min-height:40px;box-shadow:0 1px 4px rgba(60,40,10,.18)}
+.srch input:focus-visible,.chip:focus-visible,.lp label:focus-within,.tl button:focus-visible{outline:2px solid #A3261B;outline-offset:2px}
+.sug{position:absolute;left:0;right:0;top:100%;margin:2px 0 0;padding:0;list-style:none;background:#FBF5E4;border:1px solid #9C8656;max-height:300px;overflow:auto;display:none;box-shadow:0 3px 10px rgba(60,40,10,.2);z-index:12}
+.sug li{padding:8px 10px;cursor:pointer;border-bottom:1px solid #E7D9B6}
+.sug li span{color:#7A6A52;font-size:12px}
+.sug li[aria-selected="true"],.sug li:hover{background:#EFE1BC}
+.chips{display:flex;gap:6px;overflow-x:auto;max-width:100%;scrollbar-width:none;padding-bottom:2px}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;font:500 12px/1 var(--mono);background:rgba(251,245,228,.94);color:#2B2119;border:1px solid #9C8656;border-radius:999px;padding:8px 11px;cursor:pointer;min-height:34px;white-space:nowrap;box-shadow:0 1px 3px rgba(60,40,10,.14)}
+.chip:hover{background:#EFE1BC}
+.chip.lyr{background:#2B2119;color:#F6EED8;border-color:#2B2119}
+.lp{position:absolute;right:54px;top:104px;z-index:9;background:rgba(251,245,228,.98);border:1px solid #9C8656;border-radius:4px;padding:10px 12px 8px;font:400 13px/1.3 var(--mono);color:#2B2119;box-shadow:0 3px 12px rgba(60,40,10,.25);display:none;min-width:240px;max-height:calc(100% - 200px);overflow:auto}
+.lp.open{display:block}
+.lp h4{margin:0 0 6px;font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#7A6A52}
+.lp h5{margin:9px 0 1px;padding-top:7px;border-top:1px solid #E2D3AE;font:600 10.5px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#A3261B}
+.lp h4+h5{border-top:0;padding-top:0;margin-top:4px}
+.lp label{display:flex;gap:8px;align-items:center;padding:5px 0;cursor:pointer;min-height:30px}
+.lp input{accent-color:#A3261B;width:16px;height:16px;flex:none}
+.lp canvas{width:22px;height:22px;flex:none}
+.ov-bl{position:absolute;left:12px;bottom:12px;z-index:4;display:flex;align-items:flex-end;gap:6px;pointer-events:none}
+.rose svg{display:block}
+.maplibregl-popup-content{background:#FBF5E4;color:#2B2119;font:400 13px/1.45 var(--mono);border:1px solid #9C8656;border-radius:4px;padding:10px 12px;box-shadow:0 3px 12px rgba(60,40,10,.25);max-width:310px;max-height:60vh;overflow:auto}
+.maplibregl-popup-content b.t{display:block;font:400 20px/1.15 var(--hand);color:#A3261B;margin-bottom:3px;letter-spacing:.02em;padding-right:14px}
+.maplibregl-popup-content table{border-collapse:collapse;margin:5px 0}
+.maplibregl-popup-content td{padding:1px 8px 1px 0;vertical-align:top}
+.maplibregl-popup-content td:first-child{color:#7A6A52}
+.maplibregl-popup-content .nt{color:#7A6A52;font-size:11.5px;margin:5px 0 0}
+.maplibregl-popup-content .lk{margin-top:6px;padding-top:6px;border-top:1px dashed #C9B583;display:flex;flex-wrap:wrap;gap:4px 12px}
+.maplibregl-popup-content a{color:#A3261B}
+.maplibregl-popup-tip{border-top-color:#9C8656!important;border-bottom-color:#9C8656!important}
+.maplibregl-ctrl-attrib{font:400 11px/1.3 var(--mono)!important;background:rgba(251,245,228,.85)!important}
+.maplibregl-ctrl-group{background:#FBF5E4!important;border:1px solid #9C8656}
+.maplibregl-popup{z-index:7}
+.nojs{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:400 14px var(--mono);color:#6E604E;padding:20px;text-align:center}
+.keyrow{display:flex;flex-wrap:wrap;gap:6px 18px;font:400 13px/1.3 var(--mono);color:var(--muted);margin:12px 0}
+.keyrow span{display:flex;align-items:center;gap:6px}.keyrow canvas{width:24px;height:24px}
+@media (max-width:1000px){
+  .ov-top{left:10px;right:54px;max-width:none;align-items:flex-start}
+  .lp{left:10px;right:auto}
+  .cartouche{top:104px}
+}
+@media (max-width:600px){
+  
+  .tb-k,.tb-links a.x{display:none}
+  .topbar{gap:10px}.tb-name{font-size:16px}.tb-links{gap:10px}
+  .lp{top:100px;left:8px;right:8px;min-width:0;max-height:calc(100% - 230px)}
+  .ov-top{left:8px;top:8px}
+  .cartouche{left:8px;top:100px;max-width:calc(100% - 16px);padding:10px 12px}
+  .cartouche h1{font-size:24px}
+  .ct-toggle{display:block}.ct-fold{display:none}
+  .ov-bl{display:none}
+  .maplibregl-ctrl-bottom-right{bottom:84px}
+}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+#map{position:absolute;inset:0}
+.chip[aria-pressed="true"]{background:#A3261B;color:#fff;border-color:#2B2119}
+.lp{top:60px}
+.keys{position:absolute;left:12px;bottom:12px;z-index:4;background:rgba(251,243,220,.95);border:1px solid #9C8656;border-radius:3px;padding:8px 10px;font:400 11.5px/1.25 var(--mono);color:#2B2119;max-width:250px;box-shadow:0 2px 8px rgba(60,40,10,.18)}
+.key b{display:block;font:400 15px/1.1 var(--hand);color:#A3261B;margin-bottom:5px;font-weight:400}
+.key .row{display:flex;align-items:center;gap:6px;margin:2px 0}
+.key i{display:inline-block;width:18px;height:11px;border:1px solid rgba(43,33,25,.5);flex:none}
+.key .dot{width:11px;height:11px;border-radius:50%;background:#1F1838;border:1.5px solid #2B2119}
+.hz{position:absolute;right:54px;bottom:34px;z-index:8;width:min(600px,calc(100% - 340px));background:rgba(251,245,228,.98);border:2px solid #2B2119;outline:1px solid #2B2119;outline-offset:-6px;padding:10px 14px 8px;color:#2B2119;box-shadow:0 3px 14px rgba(60,40,10,.25);font:400 13px/1.4 var(--mono)}
+.hz[hidden]{display:none}
+.hz h3{margin:0 26px 2px 0;font:400 22px/1.1 var(--hand);color:#A3261B}
+.hz .x{position:absolute;right:8px;top:6px;border:0;background:none;font:400 20px/1 var(--mono);color:#6E604E;cursor:pointer;min-width:30px;min-height:30px}
+.hz p{margin:0 0 4px}
+.hz svg{width:100%;height:auto;display:block}
+.hz svg .ax{font:400 10px var(--mono);fill:#6E604E}
+.hz svg .lg{font:400 10px var(--mono)}
+.hz .nt{color:#6E604E;font-size:11.5px}
+.hz a{color:#A3261B}
+@media (max-width:800px){
+  .pane{height:78svh;min-height:520px}
+  .hz{left:6px;right:6px;bottom:6px;width:auto;padding:8px 10px 6px;max-height:58%;overflow:auto}
+  .hz h3{font-size:19px}
+  .keys{display:none}
+  .chip .lg{display:none}
+  .chip{padding:8px 8px;font-size:11.5px}
+  .chips{gap:4px}
+  .ov-top{left:8px;right:54px;max-width:none;align-items:flex-start}
+  .lp{top:100px;left:8px;right:8px;min-width:0;max-height:calc(100% - 140px)}
+  .cartouche{top:100px}
+}
+.places{columns:2 260px;column-gap:28px;font:400 14px/1.45 var(--mono);padding-left:18px;margin:10px 0 18px}
+.places li{break-inside:avoid;margin:0 0 6px}
+.places a{cursor:pointer}
+
+.tl{position:absolute;left:50%;transform:translateX(-50%);bottom:14px;z-index:6;width:min(620px,calc(100% - 130px));background:rgba(251,245,228,.96);border:1px solid #9C8656;border-radius:4px;padding:7px 12px 6px;font:400 12.5px/1.3 var(--mono);color:#2B2119;box-shadow:0 2px 10px rgba(60,40,10,.2);display:flex;align-items:center;gap:10px}
+.tl input[type=range]{flex:1;accent-color:#A3261B;min-width:0;height:28px}
+.tl button{font:500 12px/1 var(--mono);background:#2B2119;color:#F6EED8;border:0;border-radius:3px;padding:7px 9px;cursor:pointer;min-height:30px;min-width:34px}
+.tl .yr{font:400 21px/1 var(--hand);color:#A3261B;min-width:118px;text-align:center}
+.tl .sm{font-size:11px;color:#6E604E;white-space:nowrap}
+.cities{position:absolute;left:276px;right:60px;bottom:86px;z-index:6;display:flex;justify-content:safe center;gap:6px;overflow-x:auto;scrollbar-width:none;padding:4px}
+.cities::-webkit-scrollbar{display:none}
+.cities button{flex:0 0 auto;width:92px;padding:0 0 4px;border:1px solid #9C8656;border-radius:4px;background:rgba(251,245,228,.97);cursor:pointer;font:500 11px/1.15 var(--mono);color:#2B2119;box-shadow:0 1px 4px rgba(60,40,10,.2);overflow:hidden}
+.cities button img{display:block;width:100%;height:56px;object-fit:cover;background:#1F1838;margin-bottom:3px;image-rendering:auto}
+.cities button[aria-pressed="true"]{border:2px solid #A3261B;background:#fff;box-shadow:0 2px 8px rgba(163,38,27,.35)}
+@media (max-width:800px){.cities{bottom:64px;left:8px;right:8px;justify-content:flex-start}.cities button{width:74px}.cities button img{height:42px}}
+.city{font:500 12px/1 var(--mono);background:rgba(251,245,228,.96);color:#2B2119;border:1px solid #9C8656;border-radius:999px;padding:7px 10px;min-height:34px;cursor:pointer}
+.key .bar{height:10px;border:1px solid #2B2119;margin:4px 0 2px;background:linear-gradient(90deg,#1F1838,#3B2F63,#5B4A8B,#7E6CA8,#A99BC0,#D9C9A3,#EBCB7A,#F0B23A,#E39A2C)}
+.key .ends{display:flex;justify-content:space-between;font-size:10.5px;color:#6E604E}
+.key .sw{display:inline-block;width:14px;height:11px;border:1px solid rgba(43,33,25,.5);vertical-align:-1px;margin-right:5px}
+.keys{bottom:84px}
+@media (max-width:800px){.tl{width:calc(100% - 16px);bottom:8px;padding:6px 8px;gap:6px}.tl .yr{font-size:17px;min-width:86px}.tl .sm{display:none}.maplibregl-ctrl-bottom-right{bottom:70px}}
+
+.pane{background:#F2F0EA}
+.pane::after{box-shadow:none}
+.lp{top:104px}
+.keys{bottom:30px}
+.key .dot{width:11px;height:11px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 0 0 1px rgba(43,33,25,.35);flex:none;display:inline-block}
+.key .ring{width:13px;height:13px;border-radius:50%;flex:none;display:inline-block;border:1px solid #2B2119}
+.key .bar{background:linear-gradient(90deg,#2D5C9E,#9DB3D3,#F4F1EA,#F0C27A,#E08A1E);height:9px}
+.krow{display:flex;flex-wrap:wrap;gap:4px 10px;margin:3px 0}.ki{display:inline-flex;align-items:center;gap:4px;white-space:nowrap}.kt{margin-top:6px}
+.lp select{width:100%;margin:4px 0 8px;font:inherit;padding:3px}
+@media (max-width:600px){.chip[data-n]{display:none}.kt{display:none}.tb-name{min-width:0;overflow:hidden;text-overflow:ellipsis;font-size:15px!important}.tb-links{flex:none}}
+@media (max-width:800px){.keys{display:block;left:8px;bottom:34px;max-width:52%;font-size:9.5px;padding:4px 6px}.key b{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a class="tb-name" href="#mapWrap">Gladstone Road or Disraeli Street?</a>
+  <span class="tb-k">Data study · 2026</span>
+  <nav class="tb-links"><a href="#essay">About</a><button class="theme" id="theme" aria-label="Toggle dark mode">◐</button><a href="https://doi.org/10.5281/zenodo.24092657">Paper</a><a class="x" href="https://github.com/Tristan-Hotham/pm-streets">Data and code</a></nav>
+</div>
+<div class="mapband">
+  <div class="pane" id="mapWrap" data-fullscreen-map role="application" aria-label="Map of British streets named after politicians, coloured by party, with towns coloured by their Victorian Liberal vote">
+    <div id="map"></div>
+    <div class="nojs" id="nojs">Loading the map. It needs JavaScript and WebGL.</div>
+    <div class="cartouche" id="cartouche">
+      <button class="ct-toggle" id="ctToggle" aria-expanded="true" title="Show the title">Gladstone or Disraeli? <span aria-hidden="true">▾</span></button>
+      <button class="ct-fold" id="ctFold" title="Fold the title" aria-label="Fold the title">▴</button>
+      <div class="ct-body">
+        <div class="kicker"><b>Data study</b><span>2026</span></div>
+        <h1>Gladstone Road or <span class="a">Disraeli Street?</span></h1>
+        <p class="dek">Every street in Britain named after a Victorian statesman, coloured by party, and every town circled by how it voted from 1868 to 1900. Tap a street or a town.</p>
+        <div class="byline">Dr Tristan Hotham · Independent researcher · 2026</div>
+      </div>
+    </div>
+    <div class="ov ov-top">
+      <div class="srch"><input type="search" id="q" placeholder="Find a town or street" aria-label="Find a town or street" autocomplete="off"><ul class="sug" id="sug" role="listbox"></ul></div>
+      <div class="chips"><button class="chip" data-n="gladstone" aria-pressed="false">Gladstone</button><button class="chip" data-n="beaconsfield" aria-pressed="false">Beaconsfield</button><button class="chip" data-n="cobden" aria-pressed="false">Cobden</button><button class="chip" data-n="lansbury" aria-pressed="false">Lansbury</button><button class="chip lyr" id="lyrBtn" aria-expanded="false" aria-controls="lp">Layers</button></div>
+    </div>
+    <div class="lp" id="lp" role="dialog" aria-label="Map layers">
+      <h4>Layers</h4>
+      <h5>Show one name</h5>
+      <select id="nameSel" aria-label="Show one name"><option value="">All names in the ticked groups</option></select>
+      <h5>Streets</h5>
+      <label><input type="checkbox" id="ckMain" checked> Party names: Gladstone, Cobden, Bright, Palmerston; Beaconsfield, Disraeli</label>
+      <label><input type="checkbox" id="ckLab" checked> Labour names and Edwardian Liberals (Asquith, Lloyd George)</label>
+      <label><input type="checkbox" id="ckTest"> Tested names (Salisbury, Peel, Rosebery, Balfour...)</label>
+      <label><input type="checkbox" id="ckOther"> Royals, heroes, reformers and set-aside names</label>
+      <label><input type="checkbox" id="ckNames" checked> Street names when zoomed in</label>
+      <h5>Towns</h5>
+      <label><input type="checkbox" id="ckTown" checked> Towns coloured by Liberal vote 1868 to 1900</label>
+    </div>
+    <div class="keys" id="keys"><div class="key"><b>Street named after</b>
+      <div class="krow"><span class="ki"><span class="dot" style="background:#E08A1E"></span> Liberal</span><span class="ki"><span class="dot" style="background:#2D5C9E"></span> Conservative</span><span class="ki"><span class="dot" style="background:#C2332B"></span> Labour</span></div>
+      <div class="kt"><b style="font-size:11px">Town ring: Liberal vote 1868 to 1900</b><div class="bar"></div><div class="ends"><span>30%</span><span>50%</span><span>70%</span></div>
+      <div class="row nt" style="color:#6E604E">Great Britain. Ring size: party streets.</div></div></div></div>
+  </div>
+</div>
+<div class="wrap" id="essay">
+<p class="lede" style="margin-top:6px">Walk through almost any Victorian town in Britain and you will find a Gladstone Street. Builders and councils named new streets after the statesmen of the day: Gladstone and Disraeli, the free traders Cobden and Bright, Palmerston. So here is a question you can answer from a street map: did Liberal towns name their streets after Liberals, and Conservative towns after Disraeli?</p>
+<p>I took every street in OpenStreetMap whose name contains a politician's or a Victorian hero's name, joined the pieces of each street, and sorted the names with care, because many statesmen's titles are also places. A Derby Road usually goes to Derby. Then I matched 160 towns to the general election results of the seats named after them, from 1868 to 1900.</p>
+<div class="byline">Dr Tristan Hotham · Independent researcher · 2026 · Data: OpenStreetMap contributors (ODbL), UK Parliament election results (Open Parliament Licence), Wikidata (CC0) · Base map: OpenFreeMap Positron</div>
+<div class="stats">
+<div class="stat"><b>405</b><span>streets named after Gladstone, more than Beaconsfield and Disraeli together (259)</span></div>
+<div class="stat"><b>77%</b><span>of party street names are Liberal, in Liberal and Conservative towns alike</span></div>
+<div class="stat"><b>+5.9</b><span>points more Liberal names for every 10 points more Liberal vote (95% range 0.4 to 11.4)</span></div>
+<div class="stat"><b>205</b><span>streets named after Keir Hardie, Lansbury, Attlee and Aneurin Bevan</span></div>
+</div>
+
+<h2><span class="n">01 · A Liberal country</span>Gladstone everywhere</h2>
+<p>The first answer is lopsided. There are 405 Gladstone streets, 150 named after Richard Cobden, 171 after Palmerston and 100 after John Bright. On the Conservative side there are 221 Beaconsfields (Disraeli's title from 1876) and just 38 Disraelis. Of all the party names, 77% are Liberal, about 3.4 for every Conservative one.</p>
+<div class="figure"><img src="img/map.jpg" alt="Two maps of Great Britain side by side: orange dots for Liberal street names spread across the industrial north, Midlands, Scotland and the south coast; far fewer blue dots for Conservative names, clustered in London" loading="lazy"><p class="src">Party street names: Liberal on the left, Conservative on the right.</p></div>
+<p>That is not because Britain voted Liberal three to one. In the towns studied the average Liberal share of the vote was 53%. Liberal heroes were named on streets in Tory towns too: <a href="#" data-t="Blackburn">Blackburn</a>, which voted only 37% Liberal, has 5 Liberal party names and no Conservative ones. Cobden and Bright were Lancashire's own heroes, whatever the town's politics. The exception is <a href="#" data-t="London">London</a>, with 41 Conservative names against 62 Liberal ones.</p>
+
+<h2><span class="n">02 · The test</span>Do the names follow the vote?</h2>
+<p>A little. Comparing towns within the same region, each 10 points more Liberal vote goes with 5.9 points more Liberal names (the 95% range is 0.4 to 11.4). A town 20 points more Liberal had roughly 12 points more of its political streets named after Liberals. <a href="#" data-t="Leicester">Leicester</a>, 77% Liberal, has 10 Liberal names and 3 Conservative; <a href="#" data-t="Liverpool">Liverpool</a>, 39% Liberal, has 14 and 4.</p>
+<div class="figure"><img src="img/towns.jpg" alt="Scatter chart of towns: Liberal vote share across the bottom, Liberal share of party street names up the side; a cloud of orange bubbles with a gentle upward slope, many towns at 100 percent Liberal names" loading="lazy"><p class="src">Each bubble is a town, sized by its party streets. The orange line is the main model's slope.</p></div>
+<p>I wrote down the test and its checks before running it, and the result is fragile in honest ways. It holds when any one region is left out, without London, with different rules for joining streets and drawing town edges, and when streets named together in one batch are counted once. Shuffling the vote shares between towns in the same region produces a link as strong only 38 times in 2,000. But it is no longer clear if every town counts equally regardless of how many streets it has, and it vanishes if I use the share of seats the Liberals won instead of their share of the vote. Most of it comes from Beaconsfield streets, which are rarer in Liberal towns; the few Disraeli streets show no pattern either way.</p>
+<div class="figure"><img src="img/checks.jpg" alt="Chart of estimates with ranges: the main estimate near 6, most checks between 5 and 9 with ranges above zero, a few alternatives overlapping zero, and two placebos centred on zero" loading="lazy"><p class="src">The main estimate and every check, with 95% ranges.</p></div>
+<p>The best test is a placebo. If the names simply reflected a town's lasting political character, the vote of 1945 to 1970 should predict them too, since left-leaning towns tended to stay that way. It does not: the Labour vote of those years gives 0.3 points per 10 and the Liberal vote -1.4, both close to zero. That fits names that followed the politics of their own time, though the later numbers are too uncertain to prove it.</p>
+
+<h2><span class="n">03 · When</span>A clock in the streets</h2>
+<p>Battle street names give a rough clock: streets named after Crimean battles were mostly laid out in the 1850s, Boer War streets around 1900. Ranked by distance from the centre within their own towns, Gladstone streets sit at 0.58 on a scale from 0 (the centre) to 1 (the edge), where you would expect for streets of the late Victorian decades: beyond the Crimean streets (0.51) and inside the Boer War ones (0.61). Beaconsfield streets sit at the same place (0.58). Labour names are farther out still (0.72).</p>
+<div class="figure"><img src="img/clock.jpg" alt="Chart of where each kind of street sits in its town, from the centre to the edge: Napoleonic and Crimean battle streets nearest the centre, Gladstone and Beaconsfield streets further out, Boer War and First World War streets further, Labour names furthest" loading="lazy"><p class="src">Where each group of streets sits within its town, with 95% ranges.</p></div>
+
+<h2><span class="n">04 · Labour</span>Keir Hardie, Lansbury, Attlee, Bevan</h2>
+<p>There are 205 streets named after Labour leaders, mostly in the coalfields of South Wales, Durham and central Scotland and in East London, where 14 of the 85 Lansbury streets are. 28% of the most Labour quarter of towns have one, against 3% of the least Labour quarter: a pattern that points the same way, though with so few streets it is suggestive rather than proven.</p>
+<div class="figure"><img src="img/labour.jpg" alt="Map of Britain with red dots for streets named after Labour leaders, clustered in South Wales, the North East, central Scotland and London, beside a bar chart rising from 3 percent to 28 percent of towns across quarters of Labour vote" loading="lazy"><p class="src">Labour names, and the share of towns with one by Labour vote 1945 to 1970.</p></div>
+
+<h2><span class="n">05 · How I did this</span>False friends</h2>
+<p><b>Streets.</b> 28,029 OpenStreetMap roads whose names contain one of 59 commemorative words, with bus stops and footpaths left out. Pieces of one street within 150 m were joined, giving 15,593 streets.</p>
+<div class="figure"><img src="img/names.jpg" alt="Two bar charts: on the left the number of streets for each name, with Victoria far ahead; on the right the share of each name's streets that have another statesman's street within 400 metres, high for Gladstone, Cobden, Bright and Disraeli, low for Liverpool, Wilson and Victoria" loading="lazy"><p class="src">How many streets carry each name, and how often they sit near another statesman's street.</p></div>
+<p><b>Names.</b> Victorian builders often named a group of streets together after the statesmen of the day, so a real political name tends to have another one nearby. 18% of Gladstone streets have another party street within 400 m, against 3% for Liverpool Road, which mostly leads to Liverpool. I set the pass mark at half the Gladstone rate before running anything. Salisbury, Peel, Rosebery, Balfour and a few others pass, but they are also places and surnames, so the main test uses only the unmistakable names; adding the others changes little.</p>
+<p><b>Votes.</b> Each town is linked to the seats named after it (Leeds, Leeds Central, East Bradford), and its Liberal share is the Liberal part of the Liberal and Conservative vote at general elections from 1868 to 1900, with Liberal Unionists counted as Conservatives. The models compare towns in the same region, with standard errors that allow for streets in one town being alike.</p>
+<p><b>What this cannot say.</b> It cannot say who chose any name or why: a builder, a landowner or a council. Streets that were renamed or cleared since are missing. Towns are drawn around their centres by distance, and the vote is the vote of the seats named after the town, which did not always match the built-up area. It is a pattern across towns, not proof that voting caused naming.</p>
+<details><summary>Sources and licences</summary>
+<ul class="plain">
+<li>Streets: © OpenStreetMap contributors (ODbL), queried with QLever (University of Freiburg). The street tables are derived from OpenStreetMap and released under the ODbL.</li>
+<li>Election results 1832 to 2024: UK Parliament and House of Commons Library (Open Parliament Licence v3.0), as compiled in an earlier study.</li>
+<li>Towns: Wikidata (CC0). Counties: ONS boundaries (Open Government Licence v3.0).</li>
+<li>Base map: OpenFreeMap Positron style, from OpenStreetMap vector tiles (ODbL). MapLibre GL JS 4.7.1 (BSD 3-Clause).</li>
+<li>Text and figures CC BY 4.0; code MIT.</li>
+</ul></details>
+<div class="cta"><a class="p" href="https://doi.org/10.5281/zenodo.24092657">Read the paper</a><a href="https://github.com/Tristan-Hotham/pm-streets">Data and code</a><a href="https://blog.tristanhotham.com/2026/10/31/pm-streets/">Blog post</a></div>
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) Gladstone Road or Disraeli Street? Partisan commemoration in the street names of Victorian Britain. Zenodo. <a href="https://doi.org/10.5281/zenodo.24092657">10.5281/zenodo.24092657</a></p>
+<p>Code: <a href="https://github.com/Tristan-Hotham/pm-streets">github.com/Tristan-Hotham/pm-streets</a> (MIT). Text and figures CC BY 4.0; derived street data ODbL (OpenStreetMap).</p>
+<p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="js/page.js?v=20261109"></script>
+<!-- map-fullscreen v1 -->
+<style id="mfs-style">
+.mfs-btn{position:absolute;top:10px;right:10px;z-index:1001;width:34px;height:34px;border:2px solid rgba(0,0,0,.25);border-radius:4px;background:#fff;color:#222;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.mfs-btn:hover{background:#f2f2f2}
+.mfs-btn svg{width:18px;height:18px}
+.mfs-host.mfs-btn-left .mfs-btn{right:auto;left:54px}
+.mfs-fake{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;height:100dvh!important;max-width:none!important;max-height:none!important;margin:0!important;z-index:100000!important;border-radius:0!important}
+html.mfs-lock,html.mfs-lock body{overflow:hidden!important}
+:fullscreen.mfs-host{width:100vw!important;height:100vh!important;max-width:none!important;max-height:none!important;margin:0!important;border-radius:0!important}
+</style>
+<script id="mfs-script">
+(function(){
+  var ICON_OPEN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>';
+  var ICON_CLOSE='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>';
+  function poke(){setTimeout(function(){window.dispatchEvent(new Event('resize'));},60);setTimeout(function(){window.dispatchEvent(new Event('resize'));},400);}
+  function realFS(){return document.fullscreenElement||document.webkitFullscreenElement;}
+  function add(el){
+    if(el.__mfs)return; el.__mfs=1;
+    var cs=getComputedStyle(el); if(cs.position==='static')el.style.position='relative';
+    el.classList.add('mfs-host');
+    // avoid clashing with a top-right Leaflet control (e.g. "Map layers")
+    var tr=el.querySelector('.leaflet-top.leaflet-right');
+    if(tr&&tr.children.length){ el.classList.add('mfs-btn-left'); }
+    var b=document.createElement('button'); b.type='button'; b.className='mfs-btn';
+    b.title='Full screen map'; b.setAttribute('aria-label','Full screen map'); b.innerHTML=ICON_OPEN;
+    ['click','dblclick','mousedown','touchstart','wheel'].forEach(function(t){b.addEventListener(t,function(e){e.stopPropagation();},{passive:t!=='click'});});
+    function setIcon(on){b.innerHTML=on?ICON_CLOSE:ICON_OPEN;b.title=on?'Exit full screen':'Full screen map';b.setAttribute('aria-label',b.title);}
+    function exitFake(){el.classList.remove('mfs-fake');document.documentElement.classList.remove('mfs-lock');setIcon(false);poke();}
+    b.addEventListener('click',function(e){
+      e.preventDefault();
+      if(el.classList.contains('mfs-fake')){exitFake();return;}
+      if(realFS()){(document.exitFullscreen||document.webkitExitFullscreen).call(document);return;}
+      var req=el.requestFullscreen||el.webkitRequestFullscreen;
+      if(req){ try{ var p=req.call(el); if(p&&p.catch)p.catch(function(){el.classList.add('mfs-fake');document.documentElement.classList.add('mfs-lock');setIcon(true);poke();}); }catch(err){el.classList.add('mfs-fake');document.documentElement.classList.add('mfs-lock');setIcon(true);poke();} }
+      else { el.classList.add('mfs-fake');document.documentElement.classList.add('mfs-lock');setIcon(true);poke(); }
+    });
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&el.classList.contains('mfs-fake'))exitFake();});
+    ['fullscreenchange','webkitfullscreenchange'].forEach(function(t){document.addEventListener(t,function(){setIcon(realFS()===el);poke();});});
+    el.appendChild(b);
+  }
+  function scan(){
+    var els=document.querySelectorAll('[data-fullscreen-map], .leaflet-container, .maplibregl-map, .mapboxgl-map');
+    els.forEach(function(el){
+      if(el.closest('.mfs-host')&&!el.classList.contains('mfs-host'))return;
+      var r=el.getBoundingClientRect(); if(r.width<200||r.height<150)return;
+      add(el);
+    });
+  }
+  function start(){scan(); var n=0; var t=setInterval(function(){scan(); if(++n>20)clearInterval(t);},500);}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start); else start();
+})();
+</script>
+<!-- /map-fullscreen -->
+
+<script src="https://maps.tristanhotham.com/assets/site-nav.js" defer></script>
+</body>
+</html>

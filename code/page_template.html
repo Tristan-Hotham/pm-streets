@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Gladstone Road or Disraeli Street? | Political street names in Britain</title>
+<meta name="description" content="Every British street named after a Victorian statesman, mapped: Gladstone, Cobden and Bright against Beaconsfield and Disraeli. Did towns name their streets after the party they voted for?">
+<meta property="og:title" content="Gladstone Road or Disraeli Street?">
+<meta property="og:description" content="{{count.gladstone|int}} Gladstone streets, {{count.beaconsfield|int}} Beaconsfields, {{count.disraeli|int}} Disraelis. Liberal names win almost everywhere, and only faintly follow the town's vote.">
+<meta property="og:image" content="https://maps.tristanhotham.com/pm-streets/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/pm-streets/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<style>
+{{CSS}}
+.pane{background:#F2F0EA}
+.pane::after{box-shadow:none}
+.lp{top:104px}
+.keys{bottom:30px}
+.key .dot{width:11px;height:11px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 0 0 1px rgba(43,33,25,.35);flex:none;display:inline-block}
+.key .ring{width:13px;height:13px;border-radius:50%;flex:none;display:inline-block;border:1px solid #2B2119}
+.key .bar{background:linear-gradient(90deg,#2D5C9E,#9DB3D3,#F4F1EA,#F0C27A,#E08A1E);height:9px}
+.krow{display:flex;flex-wrap:wrap;gap:4px 10px;margin:3px 0}.ki{display:inline-flex;align-items:center;gap:4px;white-space:nowrap}.kt{margin-top:6px}
+.lp select{width:100%;margin:4px 0 8px;font:inherit;padding:3px}
+@media (max-width:600px){.chip[data-n]{display:none}.kt{display:none}.tb-name{min-width:0;overflow:hidden;text-overflow:ellipsis;font-size:15px!important}.tb-links{flex:none}}
+@media (max-width:800px){.keys{display:block;left:8px;bottom:34px;max-width:52%;font-size:9.5px;padding:4px 6px}.key b{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a class="tb-name" href="#mapWrap">Gladstone Road or Disraeli Street?</a>
+  <span class="tb-k">Data study · 2026</span>
+  <nav class="tb-links"><a href="#essay">About</a><button class="theme" id="theme" aria-label="Toggle dark mode">◐</button><a href="https://doi.org/10.5281/zenodo.24092657">Paper</a><a class="x" href="{{REPO}}">Data and code</a></nav>
+</div>
+<div class="mapband">
+  <div class="pane" id="mapWrap" data-fullscreen-map role="application" aria-label="Map of British streets named after politicians, coloured by party, with towns coloured by their Victorian Liberal vote">
+    <div id="map"></div>
+    <div class="nojs" id="nojs">Loading the map. It needs JavaScript and WebGL.</div>
+    <div class="cartouche" id="cartouche">
+      <button class="ct-toggle" id="ctToggle" aria-expanded="true" title="Show the title">Gladstone or Disraeli? <span aria-hidden="true">▾</span></button>
+      <button class="ct-fold" id="ctFold" title="Fold the title" aria-label="Fold the title">▴</button>
+      <div class="ct-body">
+        <div class="kicker"><b>Data study</b><span>2026</span></div>
+        <h1>Gladstone Road or <span class="a">Disraeli Street?</span></h1>
+        <p class="dek">Every street in Britain named after a Victorian statesman, coloured by party, and every town circled by how it voted from 1868 to 1900. Tap a street or a town.</p>
+        <div class="byline">{{BYLINE}}</div>
+      </div>
+    </div>
+    <div class="ov ov-top">
+      <div class="srch"><input type="search" id="q" placeholder="Find a town or street" aria-label="Find a town or street" autocomplete="off"><ul class="sug" id="sug" role="listbox"></ul></div>
+      <div class="chips">{{CHIPS}}<button class="chip lyr" id="lyrBtn" aria-expanded="false" aria-controls="lp">Layers</button></div>
+    </div>
+    <div class="lp" id="lp" role="dialog" aria-label="Map layers">
+      <h4>Layers</h4>
+      <h5>Show one name</h5>
+      <select id="nameSel" aria-label="Show one name"><option value="">All names in the ticked groups</option></select>
+      <h5>Streets</h5>
+      <label><input type="checkbox" id="ckMain" checked> Party names: Gladstone, Cobden, Bright, Palmerston; Beaconsfield, Disraeli</label>
+      <label><input type="checkbox" id="ckLab" checked> Labour names and Edwardian Liberals (Asquith, Lloyd George)</label>
+      <label><input type="checkbox" id="ckTest"> Tested names (Salisbury, Peel, Rosebery, Balfour...)</label>
+      <label><input type="checkbox" id="ckOther"> Royals, heroes, reformers and set-aside names</label>
+      <label><input type="checkbox" id="ckNames" checked> Street names when zoomed in</label>
+      <h5>Towns</h5>
+      <label><input type="checkbox" id="ckTown" checked> Towns coloured by Liberal vote 1868 to 1900</label>
+    </div>
+    <div class="keys" id="keys"><div class="key"><b>Street named after</b>
+      <div class="krow"><span class="ki"><span class="dot" style="background:#E08A1E"></span> Liberal</span><span class="ki"><span class="dot" style="background:#2D5C9E"></span> Conservative</span><span class="ki"><span class="dot" style="background:#C2332B"></span> Labour</span></div>
+      <div class="kt"><b style="font-size:11px">Town ring: Liberal vote 1868 to 1900</b><div class="bar"></div><div class="ends"><span>30%</span><span>50%</span><span>70%</span></div>
+      <div class="row nt" style="color:#6E604E">Great Britain. Ring size: party streets.</div></div></div></div>
+  </div>
+</div>
+<div class="wrap" id="essay">
+<p class="lede" style="margin-top:6px">Walk through almost any Victorian town in Britain and you will find a Gladstone Street. Builders and councils named new streets after the statesmen of the day: Gladstone and Disraeli, the free traders Cobden and Bright, Palmerston. So here is a question you can answer from a street map: did Liberal towns name their streets after Liberals, and Conservative towns after Disraeli?</p>
+<p>I took every street in OpenStreetMap whose name contains a politician's or a Victorian hero's name, joined the pieces of each street, and sorted the names with care, because many statesmen's titles are also places. A Derby Road usually goes to Derby. Then I matched {{sample.towns|int}} towns to the general election results of the seats named after them, from 1868 to 1900.</p>
+<div class="byline">{{BYLINE}} · Data: OpenStreetMap contributors (ODbL), UK Parliament election results (Open Parliament Licence), Wikidata (CC0) · Base map: OpenFreeMap Positron</div>
+<div class="stats">
+<div class="stat"><b>{{count.gladstone|int}}</b><span>streets named after Gladstone, more than Beaconsfield and Disraeli together ({{beac_dis|int}})</span></div>
+<div class="stat"><b>{{main_set.lib_pc|f0}}%</b><span>of party street names are Liberal, in Liberal and Conservative towns alike</span></div>
+<div class="stat"><b>+{{effect.pp_per10|f1}}</b><span>points more Liberal names for every 10 points more Liberal vote (95% range {{effect.lo_pp|f1}} to {{effect.hi_pp|f1}})</span></div>
+<div class="stat"><b>{{labour.n|int}}</b><span>streets named after Keir Hardie, Lansbury, Attlee and Aneurin Bevan</span></div>
+</div>
+
+<h2><span class="n">01 · A Liberal country</span>Gladstone everywhere</h2>
+<p>The first answer is lopsided. There are {{count.gladstone|int}} Gladstone streets, {{count.cobden|int}} named after Richard Cobden, {{count.palmerston|int}} after Palmerston and {{count.bright|int}} after John Bright. On the Conservative side there are {{count.beaconsfield|int}} Beaconsfields (Disraeli's title from 1876) and just {{count.disraeli|int}} Disraelis. Of all the party names, {{main_set.lib_pc|f0}}% are Liberal, about {{main_set.ratio|f1}} for every Conservative one.</p>
+<div class="figure"><img src="img/map.jpg" alt="Two maps of Great Britain side by side: orange dots for Liberal street names spread across the industrial north, Midlands, Scotland and the south coast; far fewer blue dots for Conservative names, clustered in London" loading="lazy"><p class="src">Party street names: Liberal on the left, Conservative on the right.</p></div>
+<p>That is not because Britain voted Liberal three to one. In the towns studied the average Liberal share of the vote was {{sample.v_mean|f0}}%. Liberal heroes were named on streets in Tory towns too: <a href="#" data-t="Blackburn">Blackburn</a>, which voted only {{ex.Blackburn.vote|f0}}% Liberal, has {{ex.Blackburn.lib|int}} Liberal party names and no Conservative ones. Cobden and Bright were Lancashire's own heroes, whatever the town's politics. The exception is <a href="#" data-t="London">London</a>, with {{ex.London.con|int}} Conservative names against {{ex.London.lib|int}} Liberal ones.</p>
+
+<h2><span class="n">02 · The test</span>Do the names follow the vote?</h2>
+<p>A little. Comparing towns within the same region, each 10 points more Liberal vote goes with {{effect.pp_per10|f1}} points more Liberal names (the 95% range is {{effect.lo_pp|f1}} to {{effect.hi_pp|f1}}). A town 20 points more Liberal had roughly {{effect.pp_40_60|f0}} points more of its political streets named after Liberals. <a href="#" data-t="Leicester">Leicester</a>, {{ex.Leicester.vote|f0}}% Liberal, has {{ex.Leicester.lib|int}} Liberal names and {{ex.Leicester.con|int}} Conservative; <a href="#" data-t="Liverpool">Liverpool</a>, {{ex.Liverpool.vote|f0}}% Liberal, has {{ex.Liverpool.lib|int}} and {{ex.Liverpool.con|int}}.</p>
+<div class="figure"><img src="img/towns.jpg" alt="Scatter chart of towns: Liberal vote share across the bottom, Liberal share of party street names up the side; a cloud of orange bubbles with a gentle upward slope, many towns at 100 percent Liberal names" loading="lazy"><p class="src">Each bubble is a town, sized by its party streets. The orange line is the main model's slope.</p></div>
+<p>I wrote down the test and its checks before running it, and the result is fragile in honest ways. It holds when any one region is left out, without London, with different rules for joining streets and drawing town edges, and when streets named together in one batch are counted once. Shuffling the vote shares between towns in the same region produces a link as strong only {{ri.count|int}} times in {{ri.draws|int}}. But it is no longer clear if every town counts equally regardless of how many streets it has, and it vanishes if I use the share of seats the Liberals won instead of their share of the vote. Most of it comes from Beaconsfield streets, which are rarer in Liberal towns; the few Disraeli streets show no pattern either way.</p>
+<div class="figure"><img src="img/checks.jpg" alt="Chart of estimates with ranges: the main estimate near 6, most checks between 5 and 9 with ranges above zero, a few alternatives overlapping zero, and two placebos centred on zero" loading="lazy"><p class="src">The main estimate and every check, with 95% ranges.</p></div>
+<p>The best test is a placebo. If the names simply reflected a town's lasting political character, the vote of 1945 to 1970 should predict them too, since left-leaning towns tended to stay that way. It does not: the Labour vote of those years gives {{placebo_later.2.b|pp}} points per 10 and the Liberal vote {{placebo_later.1.b|pp}}, both close to zero. That fits names that followed the politics of their own time, though the later numbers are too uncertain to prove it.</p>
+
+<h2><span class="n">03 · When</span>A clock in the streets</h2>
+<p>Battle street names give a rough clock: streets named after Crimean battles were mostly laid out in the 1850s, Boer War streets around 1900. Ranked by distance from the centre within their own towns, Gladstone streets sit at {{tm.gladstone.mean|f2}} on a scale from 0 (the centre) to 1 (the edge), where you would expect for streets of the late Victorian decades: beyond the Crimean streets ({{tm.crimea.mean|f2}}) and inside the Boer War ones ({{tm.boer.mean|f2}}). Beaconsfield streets sit at the same place ({{tm.beaconsfield.mean|f2}}). Labour names are farther out still ({{tm.labour.mean|f2}}).</p>
+<div class="figure"><img src="img/clock.jpg" alt="Chart of where each kind of street sits in its town, from the centre to the edge: Napoleonic and Crimean battle streets nearest the centre, Gladstone and Beaconsfield streets further out, Boer War and First World War streets further, Labour names furthest" loading="lazy"><p class="src">Where each group of streets sits within its town, with 95% ranges.</p></div>
+
+<h2><span class="n">04 · Labour</span>Keir Hardie, Lansbury, Attlee, Bevan</h2>
+<p>There are {{labour.n|int}} streets named after Labour leaders, mostly in the coalfields of South Wales, Durham and central Scotland and in East London, where {{labour.lansbury_london|int}} of the {{count.lansbury|int}} Lansbury streets are. {{h3_quart.3.pc|f0}}% of the most Labour quarter of towns have one, against {{h3_quart.0.pc|f0}}% of the least Labour quarter: a pattern that points the same way, though with so few streets it is suggestive rather than proven.</p>
+<div class="figure"><img src="img/labour.jpg" alt="Map of Britain with red dots for streets named after Labour leaders, clustered in South Wales, the North East, central Scotland and London, beside a bar chart rising from 3 percent to 28 percent of towns across quarters of Labour vote" loading="lazy"><p class="src">Labour names, and the share of towns with one by Labour vote 1945 to 1970.</p></div>
+
+<h2><span class="n">05 · How I did this</span>False friends</h2>
+<p><b>Streets.</b> {{n.ways|int}} OpenStreetMap roads whose names contain one of {{n.names|int}} commemorative words, with bus stops and footpaths left out. Pieces of one street within 150 m were joined, giving {{n.streets|int}} streets.</p>
+<div class="figure"><img src="img/names.jpg" alt="Two bar charts: on the left the number of streets for each name, with Victoria far ahead; on the right the share of each name's streets that have another statesman's street within 400 metres, high for Gladstone, Cobden, Bright and Disraeli, low for Liverpool, Wilson and Victoria" loading="lazy"><p class="src">How many streets carry each name, and how often they sit near another statesman's street.</p></div>
+<p><b>Names.</b> Victorian builders often named a group of streets together after the statesmen of the day, so a real political name tends to have another one nearby. {{diag.gladstone.coloc|f0}}% of Gladstone streets have another party street within 400 m, against {{diag.liverpool.coloc|f0}}% for Liverpool Road, which mostly leads to Liverpool. I set the pass mark at half the Gladstone rate before running anything. Salisbury, Peel, Rosebery, Balfour and a few others pass, but they are also places and surnames, so the main test uses only the unmistakable names; adding the others changes little.</p>
+<p><b>Votes.</b> Each town is linked to the seats named after it (Leeds, Leeds Central, East Bradford), and its Liberal share is the Liberal part of the Liberal and Conservative vote at general elections from 1868 to 1900, with Liberal Unionists counted as Conservatives. The models compare towns in the same region, with standard errors that allow for streets in one town being alike.</p>
+<p><b>What this cannot say.</b> It cannot say who chose any name or why: a builder, a landowner or a council. Streets that were renamed or cleared since are missing. Towns are drawn around their centres by distance, and the vote is the vote of the seats named after the town, which did not always match the built-up area. It is a pattern across towns, not proof that voting caused naming.</p>
+<details><summary>Sources and licences</summary>
+<ul class="plain">
+<li>Streets: © OpenStreetMap contributors (ODbL), queried with QLever (University of Freiburg). The street tables are derived from OpenStreetMap and released under the ODbL.</li>
+<li>Election results 1832 to 2024: UK Parliament and House of Commons Library (Open Parliament Licence v3.0), as compiled in an earlier study.</li>
+<li>Towns: Wikidata (CC0). Counties: ONS boundaries (Open Government Licence v3.0).</li>
+<li>Base map: OpenFreeMap Positron style, from OpenStreetMap vector tiles (ODbL). MapLibre GL JS 4.7.1 (BSD 3-Clause).</li>
+<li>Text and figures CC BY 4.0; code MIT.</li>
+</ul></details>
+<div class="cta"><a class="p" href="https://doi.org/10.5281/zenodo.24092657">Read the paper</a><a href="{{REPO}}">Data and code</a><a href="https://blog.tristanhotham.com/2026/10/31/pm-streets/">Blog post</a></div>
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) Gladstone Road or Disraeli Street? Partisan commemoration in the street names of Victorian Britain. Zenodo. <a href="https://doi.org/10.5281/zenodo.24092657">10.5281/zenodo.24092657</a></p>
+<p>Code: <a href="{{REPO}}">github.com/Tristan-Hotham/pm-streets</a> (MIT). Text and figures CC BY 4.0; derived street data ODbL (OpenStreetMap).</p>
+<p>{{AI}}</p>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="js/page.js?v={{VERSION}}"></script>
+{{FULLSCREEN}}
+<script src="https://maps.tristanhotham.com/assets/site-nav.js" defer></script>
+</body>
+</html>

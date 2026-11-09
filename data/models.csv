@@ -1,0 +1,44 @@
+group,label,x,b,se,lo,hi,p,n,towns
+main,"Main: street-level LPM, controls, region FE, SE clustered by town",v_lib210,0.05922,0.02803,0.00428,0.11415,0.03462,610,160.0
+alt,"Binomial logit (log-odds per 10 points), SE clustered by county",v_lib210,0.3575,0.16775,0.02872,0.68629,0.03308,610,160.0
+alt,"Town-level OLS on the Liberal share of names, towns with 2 or more party streets, HC3",v_lib210,0.0632,0.03879,-0.01282,0.13923,0.10321,108,108.0
+alt,Town-level OLS without influential towns (Cook's D > 4/n),v_lib210,0.05444,0.03125,-0.00681,0.11569,0.08149,100,100.0
+alt,Liberal share of seats won 1868 to 1900 (uncontested included),v_libwon10,0.00416,0.00972,-0.01489,0.02321,0.66885,610,160.0
+alt,Vote 1868 to 1880 only,v1_lib210,0.02569,0.01956,-0.01264,0.06402,0.18892,489,103.0
+alt,Vote 1885 to 1900 only,v2_lib210,0.03629,0.02878,-0.02012,0.0927,0.20739,603,156.0
+alt,No controls,v_lib210,0.04545,0.02046,0.00535,0.08556,0.02632,610,160.0
+alt,Adding log(1 + battle streets),v_lib210,0.06168,0.02804,0.00672,0.11665,0.02785,610,160.0
+alt,Parliamentary boroughs of 1868 only,v_lib210,0.03832,0.03169,-0.02379,0.10043,0.22654,489,103.0
+placebo_later,Main model on the placebo sample (Victorian vote),v_lib210,0.05898,0.02914,0.00186,0.1161,0.04301,597,151.0
+placebo_later,Liberal share of all votes 1945 to 1970,p_libtot10,-0.014,0.04002,-0.09244,0.06445,0.72658,597,151.0
+placebo_later,Labour share of all votes 1945 to 1970,p_lab10,0.00259,0.02037,-0.03735,0.04252,0.89899,597,151.0
+placebo_later,"Victorian vote, controlling for Labour share 1945 to 1970",v_lib210,0.06031,0.02957,0.00235,0.11826,0.04139,597,151.0
+robust,Without London,v_lib210,0.05874,0.02808,0.00371,0.11377,0.03644,507,159.0
+robust,Without the five towns with most party streets,v_lib210,0.08619,0.02738,0.03253,0.13985,0.00164,450,155.0
+robust,Pieces joined within 600 m,v_lib210,0.05779,0.02733,0.00423,0.11135,0.03444,529,160.0
+robust,Town radius x0.7,v_lib210,0.05929,0.02967,0.00113,0.11745,0.0457,589,158.0
+robust,Town radius x1.4,v_lib210,0.05922,0.02803,0.00428,0.11415,0.03462,610,160.0
+robust,"Extended name set (Rosebery, Granville; Salisbury, Balfour, Hartington, Chamberlain)",v_lib210,0.05185,0.02221,0.00832,0.09538,0.01956,1427,213.0
+robust,Peel added as Conservative,v_lib210,0.0658,0.02799,0.01095,0.12065,0.01872,781,178.0
+robust,Traditional street words only,v_lib210,0.06852,0.03076,0.00823,0.1288,0.0259,510,147.0
+robust,Same-party streets within 300 m counted once,v_lib210,0.05508,0.0268,0.00256,0.10761,0.03985,447,160.0
+robust,Without Gladstone streets,v_lib210,0.08759,0.03665,0.01576,0.15942,0.01684,417,128.0
+robust,England and Wales only,v_lib210,0.05159,0.0293,-0.00585,0.10902,0.07836,569,150.0
+loro,Without East Midlands,v_lib210,0.07507,0.02935,0.01754,0.1326,0.01055,554,149.0
+loro,Without East of England,v_lib210,0.04919,0.02909,-0.00782,0.10621,0.0908,573,144.0
+loro,Without London,v_lib210,0.05929,0.02803,0.00435,0.11424,0.03443,508,160.0
+loro,Without North East,v_lib210,0.05164,0.03173,-0.01055,0.11383,0.10364,570,150.0
+loro,Without North West,v_lib210,0.05447,0.03169,-0.00765,0.11659,0.08566,487,126.0
+loro,Without Scotland,v_lib210,0.05159,0.0293,-0.00585,0.10902,0.07836,569,150.0
+loro,Without South East,v_lib210,0.06818,0.03015,0.00909,0.12727,0.02372,548,134.0
+loro,Without South West,v_lib210,0.05937,0.02883,0.00286,0.11588,0.03947,567,145.0
+loro,Without Wales,v_lib210,0.06158,0.02808,0.00655,0.11661,0.0283,607,158.0
+loro,Without West Midlands,v_lib210,0.05929,0.02746,0.00546,0.11311,0.03086,562,143.0
+loro,Without Yorkshire and the Humber,v_lib210,0.06256,0.02945,0.00485,0.12028,0.03362,555,142.0
+h3,Labour share 1945 to 1970,p_lab10,0.04209,,-0.00147,0.08564,0.05825,245,
+h3,plus Liberal share 1868 to 1900,p_lab10,0.04001,,-0.00511,0.08513,0.08219,245,
+h3,plus Liberal share 1868 to 1900,v_lib210,0.01225,,-0.04363,0.06812,0.6675,245,
+h3,Labour share 1918 to 1935,i_lab10,0.02584,,-0.01502,0.0667,0.21511,235,
+placebo_count,"Royal-named streets (Victoria, Albert, Alexandra)",v_lib210 (IRR),1.03701,,0.95388,1.12738,0.394,297,
+placebo_count,Battle-named streets 1793 to 1944 (battle-streets),v_lib210 (IRR),0.93537,,0.84325,1.03755,0.20655,297,
+placebo_count,All main-set party streets,v_lib210 (IRR),1.1556,,1.01297,1.3183,0.03142,297,

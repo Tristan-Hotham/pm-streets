@@ -1,0 +1,6 @@
+[{"out":"qa/desktop.jpg","w":1280,"h":800},
+ {"out":"qa/desktop_town.jpg","w":1280,"h":800,"q":"town=Leeds","eval":"document.getElementById('ckTest').click()"},
+ {"out":"qa/desktop_popup.jpg","w":1280,"h":800,"q":"at=53.75,-2.48,13","eval":"(()=>{const m=window.__map;const f=m.queryRenderedFeatures({layers:['st']})[0];if(f){const p=m.project(f.geometry.coordinates);m.fire('click',{point:p,lngLat:f.geometry.coordinates});}})()"},
+ {"out":"qa/desktop_full.jpg","w":1280,"h":800,"full":true},
+ {"out":"qa/phone.jpg","w":390,"h":800,"dpr":2},
+ {"out":"qa/phone_full.jpg","w":390,"h":800,"dpr":1,"full":true}]
