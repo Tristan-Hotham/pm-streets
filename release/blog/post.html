@@ -1,0 +1,132 @@
+<!-- wp:paragraph -->
+<p><em>Victorian builders named thousands of streets after the statesmen of the day. So did Liberal towns get Gladstone Roads and Conservative towns Disraeli Streets? I mapped every street in Britain named after a politician, matched the towns to how they voted, and found a country that commemorated Liberals almost everywhere.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/pm-streets/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.24092657">Read the paper</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>If you live in a Victorian town there is a fair chance that somewhere near you is a Gladstone Street. William Gladstone was prime minister four times between 1868 and 1894, and for thirty years the builders putting up new terraces on the edge of every growing town liked to name them after him. They also named streets after his great rival Benjamin Disraeli, who became Earl of Beaconsfield in 1876, and after the free traders Richard Cobden and John Bright, and after Lord Palmerston.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Street names were a cheap way to make a point. Naming a street cost nothing, and whoever laid it out, usually a builder, a landowner or a land society, chose the name, with the council mostly checking there was not one already. So here is a question a street map can answer: did the names follow the politics of the town? Did Liberal towns name their streets after Liberals and Conservative towns after Disraeli?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Gladstone everywhere</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>I took every street in OpenStreetMap whose name contains a politician's name, or a Victorian hero's, joined the pieces of each street together, and sorted the names. The first answer is lopsided. There are 405 Gladstone streets in the UK, 150 Cobden streets, 171 Palmerstons and 100 named after John Bright. On the other side there are 221 Beaconsfields and only 38 Disraelis. Gladstone alone beats Beaconsfield and Disraeli put together.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_map.png|Two maps of Great Britain side by side: orange dots for streets named after Gladstone, Cobden, Bright and Palmerston spread across the industrial north, the Midlands, Scotland and the south coast; far fewer blue dots for Beaconsfield and Disraeli, clustered in London|Every street named after a Liberal hero (left) or Disraeli (right) in Great Britain.}}
+
+<!-- wp:paragraph -->
+<p>Of all the party names, 77% are Liberal. That is not because Britain voted Liberal three to one: in the towns I could match to election results, the average Liberal share of the vote between 1868 and 1900 was 53%. Blackburn, a Tory town that gave the Liberals only 37% of its vote, has 5 Liberal party names and not one Conservative. In the cotton towns Cobden and Bright, who led the fight to repeal the Corn Laws, were local heroes whatever the town's politics. The one big exception is London, with 41 Conservative names against 62 Liberal ones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Sorting out the false friends</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The hardest part was deciding which names really are political. Lord Derby was a Conservative prime minister three times, but a Derby Road usually goes to Derby. Lord Melbourne, Lord Aberdeen and Lord Liverpool share their names with cities, Lord John Russell with a great many Russells, and Salisbury with a cathedral city. So I used a simple test: Victorian builders often named a little group of streets together after the statesmen of the day, so a street that really commemorates a politician should often have another statesman's street nearby.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_names.png|Two bar charts: on the left the number of streets for each name, with Victoria far ahead of the rest; on the right the share of each name's streets that have another statesman's street within 400 metres, high for Gladstone, Cobden, John Bright and Disraeli, low for Liverpool, Wilson and Victoria|How many streets carry each name, and how often they sit within 400 m of another statesman's street.}}
+
+<!-- wp:paragraph -->
+<p>18% of Gladstone streets have another party street within 400 m. For Liverpool Road it is 3% and for Victoria Street 7%, which shows what you get by chance. I set the pass mark at half the Gladstone rate before running any test. Salisbury, Peel, Rosebery and Balfour pass, but since they are also places and surnames I kept them out of the main test and used them only as a check. Churchill and Baldwin fail: their streets seldom sit near other statesmen, and many are probably named after villages or other people.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Do the names follow the vote?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A little. I linked 160 towns to the general election results of the seats named after them, from 1868 to 1900, and compared towns within the same region. For every 10 points more Liberal vote, a town's political streets were 5.9 points more likely to be Liberal names, with a 95% range of 0.4 to 11.4. Leicester, 77% Liberal, has 10 Liberal names to 3 Conservative; Liverpool, 39% Liberal, has 14 to 4.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_towns.png|Scatter chart of towns: Liberal share of the vote from 1868 to 1900 along the bottom, Liberal share of the town's party street names up the side; a cloud of orange bubbles with a gentle upward slope and many towns at 100 percent|Each bubble is a town, sized by its number of party streets. The orange line has the slope of the main model.}}
+
+<!-- wp:paragraph -->
+<p>I wrote down the test, and every check I would run on it, before looking at the answer, so here is the honest version. The link survives leaving out any one region, leaving out London, changing how streets and towns are drawn, and counting streets named together in one batch only once. Shuffling the vote shares between towns in the same region gives a link this strong only 38 times in 2,000. But it is no longer clear if every town counts the same however few streets it has, and it vanishes if I use the share of seats the Liberals won rather than their share of the vote. It also fades in the old parliamentary boroughs on their own, and in each half of the period on its own. And most of it comes from Beaconsfield streets, which are rarer in Liberal towns: the few streets named Disraeli show no pattern either way.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_checks.png|Chart of estimates with ranges: the main estimate near 6, most of the checks between 5 and 9 with ranges above zero, a few alternatives overlapping zero, and two placebo estimates centred on zero|The main estimate and every check, with 95% ranges. The two grey rows at the bottom are placebos.}}
+
+<!-- wp:paragraph -->
+<p>The test I like best is a placebo. Towns that voted Liberal in the 1880s often voted Labour in the 1950s, so if the names just reflected a town's lasting political character, the vote of 1945 to 1970 should predict them too. It does not: 0.3 points per 10 for the later Labour vote and -1.4 for the later Liberal vote, both close to zero. That fits names that followed the politics of their own time, though the later numbers are too uncertain to prove it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:pullquote -->
+<figure class="wp-block-pullquote"><blockquote><p>Britain named its streets after Liberals almost everywhere. Liberal towns did it a little more.</p></blockquote></figure>
+<!-- /wp:pullquote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A clock in the streets</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>When were these streets built? Battle names give a rough clock, because builders named streets after the latest victory: Alma Road in the 1850s, Ladysmith Road around 1900. Ranked by distance from the centre within their own towns, Gladstone streets sit at 0.58 on a scale from 0 at the centre to 1 at the edge, beyond the Crimean battle streets (0.51) and inside the Boer War ones (0.61). Beaconsfield streets sit in almost the same place. So most of them were probably laid out in the late Victorian decades, the years of the votes I used, though this clock is a rough one.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_clock.png|Chart of where each kind of street sits in its town from the centre to the edge: Napoleonic and Crimean battle streets nearest the centre, Gladstone and Beaconsfield streets further out, Boer War and First World War battle streets further still, Labour names furthest|Where each group of streets sits within its own town, with 95% ranges.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Keir Hardie, Lansbury, Attlee and Bevan</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The habit did not end with the Victorians. There are 205 streets named after Labour leaders, and they sit farther out than any of the others (0.72), on the estates of the twentieth century. They cluster in the coalfields of South Wales, Durham and central Scotland, and in East London, where 14 of the 85 Lansbury streets are. 28% of the most Labour quarter of towns have one, against 3% of the least Labour quarter. There are too few of them to be sure, but they point the same way.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_labour.png|Map of Britain with red dots for streets named after Labour leaders, clustered in South Wales, the North East, central Scotland and London, beside a bar chart rising from 3 percent to 28 percent of towns across quarters of Labour vote|Streets named after Labour leaders, and the share of towns with one, by the Labour vote from 1945 to 1970.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How I did this</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The streets are 28,029 roads in OpenStreetMap whose names contain one of 59 commemorative words, with bus stops and footpaths left out; pieces of one street within 150 m of each other were joined, giving 15,593 streets. Each street belongs to the nearest town, with a reach that grows with the town's size. The election results are the UK Parliament's, by constituency, from an earlier project of mine, and each town is linked to the seats named after it (Leeds, Leeds Central, East Bradford). Liberal Unionists, who split from Gladstone in 1886, count as Conservatives. The full method, every check and the regression tables are in the paper.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>What this cannot tell you: who chose any particular name, or why. A builder, a landowner, a land society or a council might each have had their reasons, and a Gladstone Road might even be named after a local Gladstone family. Streets that were renamed or cleared since are missing. It is a pattern across 160 towns, not proof that voting caused naming. If you know how your Gladstone Street got its name, I would love to hear.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/pm-streets/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.24092657">Read the paper</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://github.com/Tristan-Hotham/pm-streets">Data and code</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Notes and sources</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Streets: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL), queried with QLever. Election results: UK Parliament and House of Commons Library (Open Parliament Licence v3.0). Towns: Wikidata (CC0). Counties: ONS boundaries (Open Government Licence v3.0).</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>On street names and memory: M. Azaryahu, The power of commemorative street names (1996); R. Rose-Redwood, D. Alderman and M. Azaryahu, Geographies of toponymic inscription (2010); D. Oto-Peralías, What do street names tell us? (2018). On Victorian popular politics: E. F. Biagini, Liberty, Retrenchment and Reform (1992); M. Pugh, The Tories and the People (1985); H. Pelling, Social Geography of British Elections (1967).</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
